@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link href="css/main.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+	<header class="site-header">
+		<nav class="navigation">
+			<ul class="navigation__list navigation__list--js">
+				<li class="navigation__item">
+					<a class="navigation__link" href="index.html">Strona główna</a>
+				</li>
+			</ul>
+		</nav>
+	</header>
+
+<body id="up">
+  <header class="site-header">
+    <nav class="navigation">
+      <button class="navigation__switcher navigation__switcher--js" aria-label="Otwórz menu">menu</button>
+      <div class="navigation__list--weeks navigation__list--js">
+        <ul class="navigation__list--grid">
+          <li class="navigation__item">
+            <a class="navigation__link" href="weekI.html">Tydzień I</a>
+          </li>
+          <li class="navigation__item">
+            <a class="navigation__link" href="weekII.html">Tydzień II</a>
+          </li>
+          <li class="navigation__item">
+            <a class="navigation__link" href="weekIII.html">Tydzień III</a>
+          </li>
+          <li class="navigation__item">
+            <a class="navigation__link" href="weekIV.html">Tydzień IV</a>
+          </li>
+          <li class="navigation__item">
+            <a class="navigation__link" href="weekV.html">Tydzień V</a>
+          </li>
+          <li class="navigation__item">
+            <a class="navigation__link" href="weekVI.html">Tydzień VI</a>
+          </li>
+          <li class="navigation__item">
+            <a class="navigation__link" href="weekVII.html">Tydzień VII</a>
+          </li>
+          <li class="navigation__item">
+            <a class="navigation__link" href="weekVIII.html">Tydzień VIII</a>
+          </li>
+          <li class="navigation__item">
+            <a class="navigation__link" href="weekIX.html">Tydzień IX</a>
+          </li>
+          <li class="navigation__item">
+            <a class="navigation__link" href="weekX.html">Tydzień X</a>
+          </li>
+          <li class="navigation__item">
+            <a class="navigation__link" href="weekXI.html">Tydzień XI</a>
+          </li>
+          <li class="navigation__item">
+            <a class="navigation__link" href="weekXII.html">Tydzień XII</a>
+          </li>
+        </ul>
+      </div>
+      <ul class="navigation__list">
+        <li class="navigation__item">
+          <a class="navigation__link" href="index.html">Strona główna</a>
+        </li>
+        <li class="navigation__item">
+          <a class="navigation__link" href="weekVI.html">Poprzedni tydzień</a>
+        </li>
+        <li class="navigation__item">
+          <a class="navigation__link" href="weekVIII.html">Następny tydzień</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="main">
+    <section class="section">
+      <header class="article__header">
+        <h2 class="section__title">
+          Tydzień VII
+        </h2>
+      </header>
+      <article class="day">
+        <header>
+          <h3 Class="day__title">
+            JS: obiekty, obiekty
+          </h3>
+        </header>
+        <p class="day__paragraph">
+          Prawie wszystko w JS jest obiektrm*<br>
+          * - nawet typy proste, mimo iż nie są obiektami, to tak się zachowują
+        </p>
+        <p class="day__paragraph">
+          Zmienn -> const / let<br>
+          funkcje ()->{}
+        </p>
+        <p class="day__paragraph">
+          <strong>Obiekt jest strukturą danych {}</strong>
+        </p>
+        <p class="day__paragraph">
+          Przykładowy obiekt: Gwiazda śmierci
+        </p>
+        <div class="img__position">
+          <img src="/assets/img/gwiazda-śmierci.JPG" alt="Przykładowy obiekt: Gwiazda Śmierci" class="img__dethStar">
+        </div>
+        <p class="day__paragraph">
+          Nasz świat jest obiektowy -> przenosimy świat rzeczywisty na świat programistyczny
+        </p>
+        <p class="day__paragraph">
+          key: value<br>
+          klucz: wartość<br>
+          klucz - unikalny w ramach obiektu<br>
+          wartość - prymitywy / funkcje / zagnieżdżenia
+        </p>
+        <p class="attention">
+          Zmienne w obiektach nazywywamy -> własnościami (properties)
+        </p>
+        <p class="attention">
+          funkcje w obiektach nazywamy -> metody (methods)
+        </p>
+        <p class="attention">
+          Poza obiektami dalej nazywamy je zmiennymi i&nbspfunkcjami - odróżnienie
+        </p>
+        <p class="day__paragraph">
+          . - dot notation - notacja kropkowa<br>
+          np. console.log(dethStar.name)<br>
+          zwróci nam nazwę - dethStar
+        </p>
+        <p class="day__paragraph">
+          dethStar.name = 'Gwiazda śmierci<br>
+          console.log(dethStar.name)<br>
+          zwróci nam nazwę - Gwiazda śmierci - pozwala na zmianę wartości properties
+        </p>
+        <p class="day__paragraph">
+          [] - bracket notation - działa tak samo jak dot notation z tą różnicą, że można tam przywoływać properties ze
+          spacją (jest to niepolecane, lepiej zapisywać camelCasem, ale czasem nieuniknione)<br>
+          dethStar["population living"] = 0 - doda nam nową własność (property)
+        </p>
+        <p class="day__paragraph">
+          <strong>JSON - JavaScript Obcjet Notation</strong><br>
+          Jest to obiekt javascriptowy, zapisany w specjalny sposób i jest on przesyłany np. pomiędzy serwerem, a naszą
+          aplikacją frontendową. Jest to uniwersalny format danych, niezależny od języka, może być wysyłany z backendu.
+          JSON nie jest przypisany do żadnej zmiennej, musimy go przypisać<br>
+          JSON - nie może posiadać funkcji; wszystko jest zapisane double casem ""
+        </p>
+        <div class="json">
+          {<br>
+          "diameter": "120000",<br>
+          "isOperationf": "true",<br>
+          "levels": "357",<br>
+          "name": "'Deth Star'",<br>
+          "population": "10000",<br>
+          "crew": {<br>
+          "function": "capitain"<br>
+          "name": "EL capitain"<br>
+          }<br>
+          }<br><br>
+          <strong>NALEŻY ZMIENIĆ FORMAT NA JSON!</strong>
+        </div>
+      </article>
+      <article class="day">
+        <header>
+          <h3 Class="day__title">
+            Peudoelementy & Peudoselektory
+          </h3>
+        </header>
+        <h4 class="day__subtitle">
+          Pseudoelementy (podwójny dwukropek ::) - tworzy elementy stylujące
+        </h4>
+        <p class="day__paragraph">
+          CSS może wpłynwać na treść
+        </p>
+        <p class="day__paragraph">
+          content: ""
+        </p>
+        <p class="day__paragraph">
+          element::before<br>
+          treść elementu<br>
+          element::after
+        </p>
+        <p class="day__paragraph">
+          <strong>Istotne</strong> - w beforze i afterze nie wrzucamy nic istotnego co może być przeczytane przez
+          czytniki, nic co ma znaczenie pod kątekm treści, tylko rzeczy, elementy wpływające na wygląd
+        </p>
+        <h4 class="day__subtitle">
+          Pseudoklasy (pojedynczy dwukropek :) - służy do określania stanu elementu
+        </h4>
+        <p class="day__paragraph">
+          selektor: hover - zmienia klasę, np. kolor, po najechaniu myszką<br>
+          visited - odwiedzona strona zmienia kolor, własnoąć<br>
+          focus - do formularzy, klasa aktywuje się po wejściu w dane pole
+        </p>
+        <p class="day__paragraph">
+          selektor: first-child / last-child / ... - zmienia klasę pierwszego / ostatniego elementu (element musi być
+          pierwszy / ostatni w rodzinie - nie może być przed / po nawet zupełnie innego elementu)
+        </p>
+        <p class="day__paragraph">
+          selektor: not(selektor)<br>
+          klasa: not(klasa--specjalna) - wszystkie elementy z daną klasą prócz klasy specjalnej dostaną daną własność
+        </p>
+        <p class="day__paragraph">
+          Pseudo klasy - <a class="web-link"
+            href="https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-classes">developer mozilla</a>
+        </p>
+      </article>
+      <article class="day">
+        <header>
+          <h3 Class="day__title">
+            SASS
+          </h3>
+        </header>
+        <p class="list__title">Problemy z CSS</p>
+        <ul class="list__totality">
+          <li class="list__item">porozrzucane klasy (bałagan w plikach)</li>
+          <li class="list__item">@media oddzielone od elementu (konieczność ponownego definiowania)</li>
+          <li class="list__item">kiepska czytelność plików (szczególnie przy zagnieżdżeniach)</li>
+          <li class="list__item">brak możliwości definiowania funkcji do robienia podobnych rzeczy</li>
+        </ul>
+        <p class="day__paragraph">
+          <strong>SASS to preprocesor CSS</strong> - zamienia swoją składnię, swój kod na CSS-a, który jest rozumiany
+          przez przeglądarkę -> <a class="web-link" href="https://sass-lang.com/documentation">SASS</a>
+        </p>
+        <p class="attention">
+          SASS potrzebuje narzędzia do działania
+        </p>
+        <p class="day__paragraph">
+          SASS vs SCSS - są to 2 różne składnie<br>
+          SASS - jest narzędziem, ma swoją składnię i ma składnię SCSS-ową (składnie podobna do pythona)<br>
+          SCSS - składnia prostsza i bardziej czytelna
+        </p>
+        <p class="day__paragraph day__paragraph--center">
+          <strong>.scss (dla programisty) --> (SASS - narzędzie) --> .css (dla przeglądarki)</strong>
+        </p>
+        <p class="day__paragraph">
+          .scss - piszemy w tych plikach - narzędzie SASS zamienia je na pliki CSS - zrozumiałe dla przeglądarki
+        </p>
+        <h4 class="day__subtitle">
+          <a class="web-link" href="https://www.sassmeister.com/">SASSMEISTER.COM</a> - strona do ćwiczeń
+        </h4>
+        <p class="day__paragraph">
+          Wszystko czego możemy używać w CSS-sie możemy używać w SASS-sie
+        </p>
+        <h4 class="day__subtitle">Co nam daje SASS?</h4>
+        <p class="day__paragraph">
+          <strong>$zmienna</strong><br>
+          <strong>@mixin</strong> - definiuje jakieś własności<br>
+          <strong>@include</strong> - wstawia tego @mixina (te własności) np.
+        </p>
+        <p class="day__paragraph day__paragraph--center">
+          @mixin borderBackground {<br>
+          border-radious: 10 px;<br>
+          background: ping;<br>
+          }<br>
+          .main {<br>
+          @include borderBackground<br>
+          }
+        </p>
+        <p class="day__paragraph">
+          Mixin może przyjmować parametry - <strong>$zmienne</strong> - które możemy zdefiniować w jdenym miejscu
+        </p>
+        <p class="day__paragraph day__paragraph--center">
+          @mixin borderBackgroundParameter ($radius, $background) {<br>
+          border-radius: $radius;<br>
+          background: $background;<br>
+          }<br>
+          .main {<br>
+          @include borderBackgroundParameter (20px , red);<br>
+          } - możemy definiować bezpośrednio przy elemncie
+        </p>
+        <p class="day__paragraph">
+          <strong>@extend</strong> - dopisuje klasy na górze (te same własności, różne klasy)
+        </p>
+        <p class="day__paragraph day__paragraph--center">
+          .font-style {<br>
+          font-size: 13px;<br>
+          colorr: green<br>
+          }<br>
+          .main {<br>
+          @extend.font-style;<br>
+          } -> spowoduje wyrzucenie do góry tych samych wartości CSS-owych w klasach
+        </p>
+        <p class="day__paragraph">
+          @mixin + @include - dopisuje własności do każdej klasy; SASS nie wrzuca pustych klas (większy porządek - BEM)
+        </p>
+        <p class="day__paragraph">
+          <strong>& parent selector</strong> - skraca zapis!
+        </p>
+        <div class="parent-selector">
+          <p class="day__paragraph">
+            .about {<br>
+            color: red;<br>
+            &__title {<br>
+            font-size: 18px;<br>
+            &--smaller {<br>
+            font-size: 16px;<br>
+            }<br>
+            }<br>
+            }
+          </p>
+          <p class="day__paragraph">
+            .about {<br>
+            color: red;<br>
+            }<br>
+            .about__title {<br>
+            font-size: 18px;<br>
+            }<br>
+            .about__title--smaller {<br>
+            font-size: 16px;<br>
+            }
+          </p>
+        </div>
+        <p class="attention">
+          Kiedy kożystamy z preprocesowrów NIE EDYTUJEMY plików wynikowych .css !
+        </p>
+        <article class="day">
+          <header>
+            <h3 Class="day__title">
+              Node.js & NPM
+            </h3>
+          </header>
+          <h4 class="day__subtitle">
+            <a class="web-link" href="https://nodejs.org/en/"> Node.js </a> Instalacja, wybieramy wersję starszą
+            (stabilniejsza)
+          </h4>
+          <p class="day__paragraph">
+            Node.js utuchamiamy z terminala, komenda - node -v - sprawdza czy się zainstalował i pokazuję jaka jest
+            wersja
+          </p>
+          <p class="day__paragraph">
+            Node.js to taki javascript uruchamianay poza przeglądarkąm, uruchamia się w systemie np. za pomocą
+            terminala.<br>
+            Node.js jest to środowisko, w którym piszemy za pomocą JS i możemy pisać aplikacje poza przeglądarką
+          </p>
+          <p class="day__paragraph">
+            Node.js nie ma dostępu do DOM
+          </p>
+          <p class="day__paragraph day__paragraph--center">
+            Uruchomienie pliku - node script.js
+          </p>
+          <h4 class="day__subtitle">
+            <a class="web-link" href="https://www.npmjs.com/"> NPM </a> nie jest tłumaczone jako node package manager
+            (chociaż nim jest - jest to narzędzie)
+          </h4>
+          <p class="day__paragraph">
+            Jest to taka wyszukiwarka / repozytorium z pakietami, które możemy ściągać do naszego projektu i ich używać
+          </p>
+          <p class="list__title">
+            Po co nam te paczki?
+          </p>
+          <ul class="list__totality">
+            <li class="list__item">dodajemy do projektów sporo gotowych bibliotek / narzędzi</li>
+            <li class="list__item">nie można polegać na konfuguracji edytora / jego wtyczkach (każdy może mieć inne
+              wtyczki zainstalowane lub ich nie chcieć</li>
+            <li class="list__item">uniwersalne źródło ze wszystkimi narzędziami</li>
+            <li class="list__item">dostęp do aktualizacji</li>
+          </ul>
+          <p class="day__paragraph">
+            npm to taki appstore / sklep play dla frontendowca<br>
+            npm to taka skrzynka z narzędziami, których możemy użyć w naszym projekcie
+          </p>
+          <p class="day__paragraph">
+            <strong>npm init</strong> - jest to polecenie, które używamy tylko raz podczas zakładania świerzego
+            projektu, podczas tworzenia możemy nadać mu nazwę itp
+          </p>
+          <p class="day__paragraph">
+            <strong>npm init -y</strong> - pomija pytania i tworzy od razu gotowy plik z wartościami domyślnymi
+          </p>
+          <p class="day__paragraph day__paragraph--center">
+            <strong>npm init -y i npm init</strong> - tworzą nam <strong>JSON-a</strong> o nazwie
+            <strong>package.json</strong>
+          </p>
+          <p class="day__paragraph">
+            Przykładowa bilbioteka: <a class="web-link" href="https://momentjs.com/"> moment.js </a> - biblioteka, która
+            formatuje czas
+          </p>
+          <p class="day__paragraph">
+            <strong>node_modules</strong> - jest to katalog, w którym znajdusą się paczki tzw. moduły (ten katalog
+            szybko potrafi przybierać na wadze), tego katalogu <strong>nie edytujemy</strong>
+          </p>
+          <p class="day__paragraph day__paragraph--center">
+            Przywołanie komedy z biblioteki: <br>
+            const moment = requier ('moment')<br>
+            console.log(moment().format('MMMM Di YYYY, h:mm:ss: a'))<br> - komenda wykorzystująca bibliotekę moment,
+            komendy dostępne na stronie biblioteki <a class="web-link" href="https://momentjs.com/"> moment.js </a>
+          </p>
+          <p class="attention">
+            Nie commitujemy katalogu node_modules !
+          </p>
+          <p class="day__paragraph">
+            Każdy może zrobić <strong>npm install</strong> i sobie ściągnąć wykorzystywane w projekcie paczki i w
+            konkretnej wersji
+          </p>
+          <p class="day__paragraph">
+            Informacje o tym co jest (jakie paczki) wykorzystywane w projekcie znajduje się w pliku <strong>package.json
+              -> dependencies</strong>
+          </p>
+          <p class="day__paragraph">
+            <strong>package-lock.json</strong> - jest to plik, który <strong>commitujemy</strong>, pozwala nam na
+            zablokowanie wersji paczki, pilnuje czy wersja jest odpowiednia itp. Tefo pliku <strong>nie
+              edytujemy</strong>. Zwiększa on bezpieczeństwo w naszym projekcie - instalowana będzie dokładnie ta wersja
+            paczki, którą użyliśmy tworząc projekt, nie ma możliwości, że wyjdzie nowa wersja, zastąpi użytą i coś
+            przestanie działać
+          </p>
+          <p class="attention">
+            package.json można edytować i commitować<br>
+            package-lock.json nie można edytować ale commitujemy
+          </p>
+          <h4 class="day__subtitle">
+            GIT
+          </h4>
+          <p class="day__paragraph">
+            <strong>mkdir</strong> - stworzenie nowego folderu z poziomu terminala
+          </p>
+          <p class="day__paragraph">
+            <strong>.gitignore</strong> - tworzymy w naszym projekcie nowy plik - <strong>.gitignore</strong>; musi być
+            w katalogu głównym<br>
+            wpisujemy do niego wszystko czego nie chcemy commitować np. node__modules
+          </p>
+          <h4 class="day__subtitle">
+            YARN
+          </h4>
+          <p class="day__paragraph">
+            Alternatywą dla NPM jest <a class="web-link" href="https://yarnpkg.com/">YARN</a> - działa podobnie, można
+            stosować zamiennie
+          </p>
+        </article>
+        <article class="day">
+          <header>
+            <h3 Class="day__title">
+              WTF GULP STARTER KIT
+            </h3>
+          </header>
+          <p class="day__paragraph">
+            <strong>.git clone </strong> <a class="web-link"
+              href="https://github.com/maciejkorsan/wtf-gulp-starter">https://github.com/maciejkorsan/wtf-gulp-starter</a>
+            - klonowanie startera z githuba
+          </p>
+          <p class="day__paragraph">
+            <strong>GULP </strong> - jest to narzędzie, które pozwala na tworzenie tzw. tasków (zadań), które są
+            wykonywane. Można powiedzieć, że jest to uruchamiacz zadań - <a class="web-link"
+              href="https://gulpjs.com/">GULP</a>
+          </p>
+          <p class="list__title">WTF GULP STARTER KIT - co się w nim znajduje</p>
+          <ul class="list__totality">
+            <li class="list__item">serwer lokalny z autoodświerzaniem - jeśli zmienimy coś w pliku i zapiszemy, to
+              przeglądarka automatycznie się przeładuje (nie trzeba odświeżać), działa również na telefonie w
+              <strong>lokalnej sieci</strong></li>
+            <li class="list__item">wsparcie dla scss i sourcemap</li>
+            <li class="list__item">minifikacja - zmniejszenie kodu, żeby jak najmniej ważył</li>
+            <li class="list__item">webpack</li>
+            <li class="list__item">publikacja na github pages za pomocą polecenia z naszego komputera</li>
+          </ul>
+          <p class="day__paragraph">
+            <strong>gulpfile.habel.js</strong> - plik z taskami i innymi
+          </p>
+          <p class="day__paragraph">
+            <strong>assets</strong> - katalog zawierający pliki ogólne: zdjęcia, filmy itp.
+          </p>
+          <h4 class="day__subtitle">
+            Instalacja gulpa
+          </h4>
+          <p class="day__paragraph">
+            gulpa instalujemy globalnie - jako administrator, raz na cały system
+          </p>
+          <p class="day__paragraph day__paragraph--center">
+            cmd -> ppm -> uruchom jako administrator -> <strong>npm install -g gulp-cli</strong>
+          </p>
+          <p class="day__paragraph">
+            npm install (tylko raz na projekt i w momencie gdy ściągniemy nową wersję lub dokładamy coś od siebie)
+          </p>
+          <p class="day__paragraph">
+            <strong>gulp</strong> - komenda w terminalu, którą się uruchamia
+          </p>
+          <p class="day__paragraph">
+            <strong>ctrl + c</strong> - wyjście z programu w terminalu do terminalu
+          </p>
+          <p class="day__paragraph">
+            <strong>local: httpl://localhost:3000</strong> - nasz serwer lokalny<br>
+            <strong>external: http://192.168.8.101:3000</strong> - link do naszej strony postawionej na serwerze
+            lokalnym,
+            na telefonie też można otwierać (działa tylko w obrębie jednej sieci wewnętrznej)
+          </p>
+          <p class="day__paragraph day__paragraph--center">
+            <strong>src/content/plik.html -> dist/plik.html</strong>
+          </p>
+          <p class="day__paragraph">
+            Katalog SRC (source) to źródło naszej strony. Tutaj pracujemy, edytujemy itp.<br>
+            To co jest w katalogu src gulp kopiuje i przetwarza do katalogu dist<br>
+            Dista nie edytujemy - po zapisaniu wszystkie zmiany zostaną utracone (zostanie i tak przetworzony katalog
+            src), jest to projekt przekompilowany i gotowy do publikacji - wszystko co zmienimy w dist zostanie
+            nadpisane
+            z katalogu src<br>
+            Dist jest źródłem serwera<br>
+            Katalog dist możemy nawet usunąć (np. żeby go oczyscić - w przypadku usunięcia np. zdjęć), po ponownym
+            odpaleniu gulpa utworzy się na nowo<br>
+            Dista nie trzeba commitować, można go dodać do .gitignore
+          </p>
+          <p class="day__paragraph">
+            Pracujemy w src np. na scss-ach. Gulp to przerobi na css-y i utworzy w dist - będzie to możliwe do
+            otworzenia
+            w przeglądarkach, serwer pobierze te pliki (z dista)
+          </p>
+          <p class="day__paragraph day__paragraph--center">
+            <strong>src/scss/main.scss -> dist/css/main.css</strong>
+          </p>
+          <p class="day__paragraph">
+            <strong>@import "normalize"</strong> - pobiera nam inne pliki scss-owe np. pobierze normalize do main.css
+          </p>
+          <p class="day__paragraph">
+            Normalize, zmienne, breakpointy i inne powinny być w osobnych plikach i <strong>@importowane</strong>
+          </p>
+          <p class="day__paragraph">
+            <strong>sourcemap</strong> - pokazuje np. w devtoolsach gdzie dana własność występuje np. SCSS 9 linijka -
+            jest to zapisane w main.css.map (niezrozumiałe dla człowieka - nie trzeba się w to zagłebiać)
+          </p>
+          <p class="day__paragraph day__paragraph--center">
+            <strong>src/assets/img/plik.png -> dist/assets/img/plik.png</strong>
+          </p>
+          <p class="attention">
+            Nie edytujemy katalogu dist! - żadne zmiany nie zostaną zapisane (chyba że taki jest nasz cel)
+          </p>
+          <p class="day__paragraph day__paragraph--center">
+            <strong>DIST jest wynikiem naszej pracy, zawartość tego katalogu publikujemy na serwerze</strong>
+          </p>
+          <p class="day__paragraph">
+            <strong>npm run deploy</strong> - npm script - wchodzi w skrypty i je odpala<br>
+            tworzy nowy branch na githubie (gh-pages), tworzy stronę tylko do publikacji i tylko z katalogu DIST (może
+            się
+            różnić od commitów)
+          </p>
+          <p class="day__paragraph">
+            paczka <strong>gh-pages</strong> - tworzy skrypt, który pomaga publikować strony w package.json
+          </p>
+          <p class="day__paragraph day__paragraph--center">
+            "scripts": {<br>
+            "deploy": "hg-pages-d-dist"<br>
+            } - git hub pages będzie pobierał katalog dist
+          </p>
+          <h4 class="day__subtitle">
+            Kolejność działania
+          </h4>
+          <p class="list__title">
+            Kolejność działania
+          </p>
+            <ol class="list__totality">
+              <li class="list__item">Z poziomu terminala pobieramy starter kit-a - <strong>git clone <a class="web-link" href="https://github.com/maciejkorsan/wtf-gulp-starter">link do repozytorium Korsana</a></strong></li>
+                <ul>
+                  <li class="list__item">tworzy nam folder <strong>wtf-gulp-starter</strong></li>
+                </ul>
+              <li class="list__item">Tworzenie nowego projektu</li>
+                <ul>
+                  <li class="list__item">nowy folder np. homepage-gulp</li>
+                  <li class="list__item">kopiujemy zawartość z wtf-gulp-starter do nowego projektu</li>
+                </ul>
+              <li class="list__item">Tworzymy nowe repozytorium z terminala lub git huba</li>
+                <ul>
+                  <li class="list__item">kopiujemy komenty do gita z git huba, wypisane są podczas tworzenia repozytorium - komendy uruchamiające wszystko np. git init, git add README</li>
+                  <li class="list__item">wklejamy powyższe komendy do terminala w naszym projekcie</li>
+                  <li class="list__item">git commit -m "initial commit"</li>
+                </ul>
+              <li class="list__item">Instalacja gulp-a globalnie (raz na system, jako administrator) - <strong>npm install -g gulp-cli</strong></li>
+              <li class="list__item"><strong>npm install</strong> - instalacja, do projektu, paczek ze startera</li>
+              <li class="list__item">komenda <strong>gulp</strong> - uruchamia projekt (za każdym razem gdy zaczynamy pracę) - odpala serwer lokalny</li>
+              <li class="list__item"><strong>npm run deploy</strong> - publikacja na gh-pages</li>
+            </ol>
+        </article>
+      </article>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <a class="footer__link" href="#up">Wróc do góry</a>
+    <p class="footer__paragraph">Strona domowa Michała Frelika - nauka front endu!</p>
+  </footer>
+
+  <script src="/js/main.js"> </script>
+
+</body>
+
+</html>

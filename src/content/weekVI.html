@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link href="css/main.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+	<header class="site-header">
+		<nav class="navigation">
+			<ul class="navigation__list navigation__list--js">
+				<li class="navigation__item">
+					<a class="navigation__link" href="index.html">Strona główna</a>
+				</li>
+			</ul>
+		</nav>
+	</header>
+
+<body id="up">
+	<header class="site-header">
+		<nav class="navigation">
+				<button class="navigation__switcher navigation__switcher--js" aria-label="Otwórz menu">menu</button>
+				<div class="navigation__list--weeks navigation__list--js">
+					<ul class="navigation__list--grid">
+						<li class="navigation__item">
+							<a class="navigation__link" href="weekI.html">Tydzień I</a>
+						</li>
+						<li class="navigation__item">
+							<a class="navigation__link" href="weekII.html">Tydzień II</a>
+						</li>
+						<li class="navigation__item">
+							<a class="navigation__link" href="weekIII.html">Tydzień III</a>
+						</li>
+						<li class="navigation__item">
+							<a class="navigation__link" href="weekIV.html">Tydzień IV</a>
+						</li>
+						<li class="navigation__item">
+							<a class="navigation__link" href="weekV.html">Tydzień V</a>
+						</li>
+						<li class="navigation__item">
+							<a class="navigation__link" href="weekVI.html">Tydzień VI</a>
+						</li>
+						<li class="navigation__item">
+							<a class="navigation__link" href="weekVII.html">Tydzień VII</a>
+						</li>
+						<li class="navigation__item">
+							<a class="navigation__link" href="weekVIII.html">Tydzień VIII</a>
+						</li>
+						<li class="navigation__item">
+							<a class="navigation__link" href="weekIX.html">Tydzień IX</a>
+						</li>
+						<li class="navigation__item">
+							<a class="navigation__link" href="weekX.html">Tydzień X</a>
+						</li>
+						<li class="navigation__item">
+							<a class="navigation__link" href="weekXI.html">Tydzień XI</a>
+						</li>
+						<li class="navigation__item">
+							<a class="navigation__link" href="weekXII.html">Tydzień XII</a>
+						</li>
+					</ul>
+				</div>
+				<ul class="navigation__list">
+					<li class="navigation__item">
+						<a class="navigation__link" href="index.html">Strona główna</a>
+					</li>
+					<li class="navigation__item">
+						<a class="navigation__link" href="weekV.html">Poprzedni tydzień</a>
+					</li>
+					<li class="navigation__item">
+						<a class="navigation__link" href="weekVII.html">Następny tydzień</a>
+					</li>
+				</ul>
+		</nav>
+	</header>
+
+	<main class="main">
+		<section class="section">
+			<header class="section__header">
+				<h2 class="section__title">
+					Tydzień VI
+				</h2>
+			</header>
+			<article class="day">
+				<header>
+				<h3 Class="day__title">
+					Formularze
+				</h3>
+			</header>
+				<p class="day__paragraph">
+					Służą do komunikacji ze światem
+				</p>
+				<p class="day__paragraph">
+					<strong>form</strong>- odpowiada za opakowanie
+				</p>
+				<p class="day__paragraph">
+					<strong>input</strong>- odpowiada za wprawadzanie danych
+				</p>
+				<p class="day__paragraph">
+					<strong>name="nazwaPola"</strong>- identyfikator pola, coś jak nazwa zmiennej, unikalna nazwa
+				</p>
+				<p class="day__paragraph">
+					<strong>id="idPola"</strong>- używamy do odniesienia się do label for"" - <strong>to samo co w
+						for</strong>
+				</p>
+				<p class="day__paragraph">
+					<strong>label</strong>- służy do opisywania pola, taka legenda pola
+				</p>
+				<p class="day__paragraph">
+					<strong>for="idPola"</strong>- nazwa Pola
+				</p>
+				<p class="attention">
+					Wartość for musi być równa id - służą do komunikacji z backendem
+				</p>
+				<p class="day__paragraph">
+					Formularze warto opakowaywać w np. p , pomocne w ostyowaniu
+				</p>
+				<p class="day__paragraph">
+					<strong>type="text"</strong>- podstawowy typ inputa
+				</p>
+				<p class="day__paragraph">
+					<strong>value="wartość"</strong>- wartość przykładowa, która może być wyświetlana w polu; czasem w
+					przypadku selectów, chceckboxów jest to wartość ukryta, która zostanie wysłana do serwera (nie
+					widoczna na stronie) - służy do komunikacji z serwerem
+				</p>
+				<p class="day__paragraph">
+					<strong>placeholder="tekst podpowiedzi"</strong>- podpowiada co wpisać w formularz (szarą
+					czcionką)<br>
+					<strong>Atrybut placeholder nie zastępuje atrybutu label!</strong>
+				</p>
+				<p class="day__paragraph">
+					<strong>fieldset</strong>- obszar do wyboru opcji (jedna opcja możliwa do wyboru z pośród propozycji
+					o tym samym <em>name</em>)
+				</p>
+				<p class="day__paragraph">
+					<strong>legend</strong>- nazwa fieldsetu
+				</p>
+				<p class="day__paragraph">
+					<strong>type="radio"</strong>- wybór 1 opcji (nazwa pochodzi od przycisków w starych radiach - tylko
+					jeden mógł być włączony); radio button opisujemy za pomocą <em>name</em>
+				</p>
+				<p class="day__paragraph">
+					<strong>checked</strong>- zaznacza daną opcję jako domyślą
+				</p>
+				<p class="day__paragraph">
+					<strong>checkbox</strong>- pozwala na zaznaczanie więcej niż jednej opcji
+				</p>
+				<p class="day__paragraph">
+					<strong>type="number"</strong>- do liczb
+				</p>
+				<p class="day__paragraph">
+					<strong>type="tel"</strong>- do numerów telefonów
+				</p>
+				<p class="day__paragraph">
+					<strong>type="email"</strong>- do emaili
+				</p>
+				<p class="day__paragraph">
+					Formularze biorą wygląd bezpośrednio z systemu. Mogą się różnić wyglądem między win, mac, lin.
+					Stylowanie ich nie jest łatwe.
+				</p>
+				<p class="day__paragraph">
+					<strong>type="range"</strong>- wprwadzenie wartości z przedziału (suwak)<br>
+					input type="range" min="0" max="100" step="10" - wartość minimalny, maksymalna, skok
+				</p>
+				<p class="day__paragraph">
+					<strong>type="password"</strong>- ukrywa wpisywany tekst - do haseł
+				</p>
+				<p class="day__paragraph">
+					<strong>type="file"</strong>- okienko do wczytywania plików (1 plik)
+				</p>
+				<p class="day__paragraph">
+					<strong>select</strong>- okienko do wybierania obcji (rozwija się)
+				</p>
+				<p class="day__paragraph">
+					<strong>option</strong>- opcja do wyboru w select (automatycznie wybiera się pierwsza opcja)
+				</p>
+				<p class="day__paragraph">
+					<strong>textarea</strong>- okienko służące do wprowadzania dłuższego tekstu (uwaga wprowadza nawet
+					spacje z VSC - najlepiej od razu zamknąć znacznik; można je skalować na stronie)
+				</p>
+				<p class="day__paragraph">
+					<strong>type="submit"</strong>- powoduje, że nasz formularz będzie wysłany - przycisk; value="nazwa"
+					- zminia nazwę submita
+				</p>
+				<p class="day__paragraph">
+					<strong>action="url://z-którym-gadamy"</strong>- odpowiada za to, gdzie dane z formularza zostaną
+					wysłane
+				</p>
+				<p class="day__paragraph">
+					<strong>action="http://dev.cotenfrontend.pl"</strong>- form checker - podgląd wysłanego formularza
+				</p>
+				<p class="day__paragraph">
+					<strong>method="get"</strong>- metoda wysyłania formularza; GET - wszystki informacja z formularza
+					spakowane są do nazwy linku, można nawet podejżeć hasło (nie stosować, chyba że trzeba), bardzo
+					długie linki (mają swój limit)
+				</p>
+				<p class="day__paragraph">
+					<strong>method="post"</strong>- wysyłanych danych nie ma w linku, bezpieczniejsze, zalecane
+				</p>
+				<p class="day__paragraph">
+					<strong>enctype="application/x-www-firm-urlencoded"</strong>- sposób wysylania formularza; domyślny
+				</p>
+				<p class="day__paragraph">
+					<strong>enctype="multipart/foarm-data"</strong>- sposób wysylania formularza; używamy kiedy wysyłamy
+					pliki
+				</p>
+				<p class="day__paragraph">
+					<strong>WALIDACJA</strong>- pozwala na sprawdzenie czy nasz formularz jest poprawnie wypełniony,
+					jeszcze przed wysłaniem; np. czy nie brakuje jakiś informacji
+				</p>
+				<p class="day__paragraph">
+					<strong>required</strong>- dane pole jest wymagane; formularz nie zostanie wyslany, jeżeli to pole
+					nie zostanie wypełnione
+				</p>
+				<p class="day__paragraph">
+					<strong>pattern="[a-2A-2O-9]+"</strong>- wyrażenie regularne (regular expression) - wymaga np.
+					użycia wielkiej, małej litery i cyfry; np. nie pozwala wpisywać cyfr<br>
+					<a class="web-link" href="http://html5pattern.com/Names"> link do strony z gotowymi patternami</a>
+				</p>
+				<p class="attention">
+					Walidacja po stronie frontendu NIE ZASTĘPUJE walidacji po stronie backendu!
+				</p>
+			</article>
+			<article class="day">
+				<header>
+				<h3 Class="day__title">
+					GRID
+				</h3>
+			</header>
+				<h4 class="day__subtitle">
+					Po co ten grid?
+				</h4>
+				<p class="day__paragraph">
+					Potrzeba stworzenia prostego systemu do budowania layoutów (tabele, floaty, div-oza itp. nie
+					spełniały oczekiwań i były kiepską praktyką)<br>
+					Przyjazny zapis i możliwość łatwej edycji w kontekście responsywności.<br>
+					Standard dopasowany do aktualnego stany stron internetowych.
+				</p>
+				<p class="day__paragraph">
+					<strong>grid - line</strong> - linie oddzielające pola (zaczynają się od 1 nie od 0)
+				</p>
+				<p class="day__paragraph">
+					<strong>grid - cell</strong> - komórka
+				</p>
+				<p class="day__paragraph">
+					<strong>grid - track (row / column)</strong> - wiersz / kolumna
+				</p>
+				<p class="day__paragraph">
+					<strong>grid - area</strong> - mówi nam w jakich obszrach i na jakich komórkach nasz element się
+					znajduje
+				</p>
+				<div class="img__position">
+					<img class="img__grid" src="/assets/img/grid.JPG" alt="Schemat GRID-a">
+				</div>
+				<p class="day__paragraph">
+					<strong>grid - container</strong> - "pudełko" które tworzy nam layout
+				</p>
+				<p class="day__paragraph">
+					<strong>display: grid</strong> - komenda przywołująca grida
+				</p>
+				<p class="day__paragraph">
+					Przerywane linie w przeglądarce mówią nam, że mamy do czynienia z gridem
+				</p>
+				<p class="day__paragraph">
+					<strong>grid-template-columns: (wartość po spacji)</strong> - mówi nam ile kolumn i jakiej
+					szerokości chcemy stworzyć (definiujeliczbę kolumn i ich szerokość)
+				</p>
+				<p class="day__paragraph">
+					<strong>grid-template-rows: (wartość po spacji)</strong> - mówi nam ile wierszy i jakiej szerokości
+					chcemy stworzyć (definiujeliczbę kolumn i ich szerokość)
+				</p>
+				<p class="day__paragraph">
+					<strong>grid-template-rows: [pierwsza] 1fr [ostatnia] 1fr</strong> - [] - można nazwać poszczególne
+					kolumny
+				</p>
+				<p class="attention">
+					Jednostka: fr - mówi nam, że jest to ułamek wolnej przestrzeni, np. mamy 3 elementy, to każdy zajmie
+					1/3 wolnej przestrzeni (1fr 1fr 1fr)
+				</p>
+				<p class="day__paragraph">
+					<strong>repeat (ileRazy, wartość)</strong> - funkcja powtarzające np.<br>
+					grid-template-rows: repeat (4, 1fr)
+				</p>
+				<p class="day__paragraph">
+					<strong>grid-column(row)gap: (rozmiar odstępu)</strong> - rozmiar odstępu między kolumnami
+				</p>
+				<p class="day__paragraph">
+					<strong>minmax(minWartość, maxWartość)</strong> - minimalna i maksymalna wielkość elementu
+				</p>
+				<div class="img__position">
+					<img class="img__grid" src="/assets/img/grid-teamplate-areas.JPG" alt="Grid teamplate areas">
+				</div>
+				<p class="day__paragraph">
+					<strong>grid-teamplate-areas: "header header header"<br>
+						"content . name"<br>
+						"footer footer footer"</strong> - tworzy layout (ile ma mieć kolum itp.)
+				</p>
+				<p class="day__paragraph">
+					<strong>grid: item</strong>
+				</p>
+				<p class="day__paragraph">
+					<strong>grid-area: (nazwa obszaru np. header) (row-start / col-start / row-end / col-end - skrócony
+						zapis)</strong>
+				</p>
+				<p class="day__paragraph">
+					<strong>grid-row(column)-start(end): (numer lini - rys. przykładowy) ([nazwa] - np. [pierwsza])
+						(span 3 - zajmuje obszar 3 kolumn/wierszy)</strong>
+				</p>
+				<p class="day__paragraph">
+					<strong>z-index</strong> - funkcjonuje normalnie do pozycjonowania warstw
+				</p>
+				<p class="day__paragraph">
+					Grid to nie tetris - wszystko zamyka się w regularnych prostokątach
+				</p>
+				<p class="attention">
+					Grid nie zastępuje flexboxa (super się uzupełniają)
+				</p>
+				<p class="day__paragraph">
+					Najlepiej gridem tworzyć ogólny layout, a flexboxem pozycjonować
+				</p>
+			</article>
+			<article class="day">
+				<header>
+				<h3 Class="day__title">
+					CSS: Media Queries
+				</h3>
+			</header>
+				<h4 class="day__subtitle">
+					RWD - Responsive Web Design (Design responsywny) - dopasowywanie się strody do rozdzielczości
+				</h4>
+				<p class="day__paragraph">
+					<strong>@media</strong> - steruje tym co ma się zadziać na danej rozdzielczości, danym urządzeniu
+				</p>
+				<p class="day__paragraph">
+					<strong>@media: (screen - style na wyświetlaczu) (print - style do druku) (all - domyślne) ...</strong>
+				</p>
+				<div class="list">
+					<p class="list__title">media fetures (finkcje):</p>
+					<ul class="list__totality">
+						<li class="list__item list__item--circle">min-width</li>
+						<li class="list__item list__item--circle">max-width</li>
+						<li class="list__item list__item--circle">color</li>
+						<li class="list__item list__item--circle">aspect-ratio - wspłóczynnik wysokości do szerokości</li>
+						<li class="list__item list__item--circle">orientation - orientacja pionowa / pozioma (szczególnie w
+							telefonach)</li>
+					</ul>
+				</div>
+				<p class="day__paragraph">
+					<strong>and</strong> - dodawanie różnych featerów (@media screen and (max-width) and (min-width))
+				</p>
+				<p class="day__paragraph">
+					<strong>not</strong> - zaprzeczenie, negacja (odwrócenie logiki)
+				</p>
+				<p class="day__paragraph">
+					<strong>,</strong> - działa jak w CSS, dodawanie kolejnych włsaności (@media screen (max-width),
+					print(max-width))
+				</p>
+				<h4 class="day__subtitle">
+					Breakpoint - określna nam w którym miejscu na naszej stronie ma nastąpić zmiana
+				</h4>
+				<p class="day__paragraph">
+					np. @media (min-width: 1000px) {.main {max-width:900px}} - od szerokości 1000 px szerokość maina zmieni się na
+					900px
+				</p>
+				<p class="day__paragraph">
+					Breakpointy ustala się zazwyczaj jako przejście między normalnym ekranem a telefonem, dużym ekranem itp.
+				</p>
+				<h4 class="day__subtitle">
+					mobile-first - technika stylowania polegająca na stylowaniu począwszy od wersji mobilnej
+				</h4>
+				<p class="day__paragraph">
+					mobile, tablet, desktop - główne kategorie urządzeń (różne rozdzielczości)
+				</p>
+				<p class="day__paragraph">
+					Device toolbar - narzędzie deweloperskie symulujące różne rozdzielczości (mobile, tablet itp)
+				</p>
+
+				<div class="grid__media-queries-test">
+					<article class="day__paragraph">
+						<h4 class="day__subtitle">
+							TEST
+						</h4>
+						<p class="day__paragraph">
+							Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloremque quasi aperiam ratione
+							totam quaerat quia delectus velit nam optio. Fugiat tempora numquam atque libero modi autem
+							quasi, eligendi aut architecto.lorem
+							Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloremque quasi aperiam ratione
+							totam quaerat quia delectus velit nam optio. Fugiat tempora numquam atque libero modi autem
+							quasi, eligendi aut architecto.lorem
+						</p>
+					</article>
+					<article class="day__paragraph">
+						<h4 class="day__subtitle">
+							TEST
+						</h4>
+						<p class="day__paragraph">
+							Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloremque quasi aperiam ratione
+							totam quaerat quia delectus velit nam optio. Fugiat tempora numquam atque libero modi autem
+							quasi, eligendi aut architecto.lorem
+							Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloremque quasi aperiam ratione
+							totam quaerat quia delectus velit nam optio. Fugiat tempora numquam atque libero modi autem
+							quasi, eligendi aut architecto.lorem
+						</p>
+					</article>
+					<article class="day__paragraph">
+						<h4 class="day__subtitle">
+							TEST
+						</h4>
+						<p class="day__paragraph">
+							Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloremque quasi aperiam ratione
+							totam quaerat quia delectus velit nam optio. Fugiat tempora numquam atque libero modi autem
+							quasi, eligendi aut architecto.lorem
+							Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloremque quasi aperiam ratione
+							totam quaerat quia delectus velit nam optio. Fugiat tempora numquam atque libero modi autem
+							quasi, eligendi aut architecto.lorem
+						</p>
+					</article>
+					<article class="day__paragraph">
+						<h4 class="day__subtitle">
+							TEST
+						</h4>
+						<p class="day__paragraph">
+							Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloremque quasi aperiam ratione
+							totam quaerat quia delectus velit nam optio. Fugiat tempora numquam atque libero modi autem
+							quasi, eligendi aut architecto.lorem
+							Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloremque quasi aperiam ratione
+							totam quaerat quia delectus velit nam optio. Fugiat tempora numquam atque libero modi autem
+							quasi, eligendi aut architecto.lorem
+						</p>
+					</article>
+				</div>
+			</article>
+			<article class="day">
+				<header>
+				<h3 Class="day__title">
+					JS: Eventy
+				</h3>
+			</header>
+				<p class="list__title">
+					Przepis na przyciksk zmieniający nagłówek
+				</p>
+					<ol class="list__totality">
+						<li class="list__item">Przycisk</li>
+						<li class="list__item">Nagłówek</li>
+						<li class="list__item">Kod JS który obsłuży kliknięcie</li>
+						<li class="list__item">Kod JS który zmieni treść nagłówka</li>
+					</ol>
+					<p class="day__paragraph">
+						<strong>button</strong> - służy do tworzenia przycisku na stronie
+					</p>
+					<p class="day__paragraph">
+						button vs a - button służy do interakcji na stronie, a służy do nawigacji
+					</p>
+					<p class="day__paragraph">
+						element.addEventListener (type*, listener [,options]) - funkcja służąca do nasłuchiwania - tworzy "kanał" do nasłuchiwania dla danego elementu na dany typ zdrarzenia (odbieranie danej interakcji)<br>
+							* type - typ zdarzenia (mamy ich kilka)<br>
+							mouse events: click, mouseenter, mouseseleaver, mouseover - wszystkie na stronie <a class="web-link" href="https://developer.mozilla.org/en-US/docs/Web/Events#Mouse_events">developer.mozilla</a> - nie muszą być tylko zdarzenia z myszką)
+					</p>
+					<p class="list__title">
+						Funkcje wywoływanie
+					</p>
+					<ul class="list__totality">
+						<li class="list__item">function nazwaFunkcji(){ consloe.log('ha;lo')<br>
+						button.addEventListener('click', nazwaFunckcji)</li>
+						<li class="list__item">Arrow function - popularne, krótsze, wszystko w jednym miejscu<br>
+						button.addEventListener('click', (e) => { console.log('hellow Arrow')})</li>
+					</ul>
+					<p class="day__paragraph">
+						<strong>e = Event</strong> - w devtoolsach mamy dużo różnych parametrów w tym odniesienie do naszego buttona - target - strona <a class="web-link" href="https://developer.mozilla.org/en-US/docs/Web/API/Event">developer.mozilla</a><br>
+						console.log(e.target)
+					</p>
+			</article>
+			<article class="day grid-week2">
+				<header Class="grid-week2__header">
+				<h3 class="day__title">
+					Hamburger menu + test grid - layout
+				</h3>
+			</header>
+				<div class="grid-week2__content">
+				<p class="list__title">
+					Przepis na Hamburger menu
+				</p>
+				<ol class="list__totality">
+					<li class="list__item">Nawigacja</li>
+					<li class="list__item">Style do nawigacji na mobile</li>
+					<li class="list__item">Style do nawigacji na desktopach</li>
+					<li class="list__item">Przycisk do pokazywania / ukrywania (zmiana klasy)</li>
+					<li class="list__item">Kod JS do podpięcia się pod przycisk</li>
+					<li class="list__item">Kod JS do zmiany klasy</li>
+				</ol>
+				<p class="day__paragraph">
+					element.classList.add, remove, toogle - zmiania co kliknięcie, contains - sprawdza nam i zwaraca true albo false w zależności czy jest klasa<br>
+					( Tutaj podajemy samą nazwę klasy bez kropki !)
+				</p>
+			</div>
+				<p class="day__paragraph grid-week2__footer">
+					aria-lebel = "otwórz menu" - atrybut zwiększający dostępność strony dla czytników
+				</p>
+				<nav class="grid-week2__menu">
+					<ul class="grid-week2__list">
+					<li>
+						<a class="grid-week2__link navigation__link" href="weekI.html">Tydzień I</a>
+					</li>
+					<li>
+						<a class="grid-week2__link navigation__link" href="weekII.html">Tydzień II</a>
+					</li>
+					<li>
+						<a class="grid-week2__link navigation__link" href="weekIII.html">Tydzień III</a>
+					</li>
+					<li>
+						<a class="grid-week2__link navigation__link" href="weekIV.html">Tydzień IV</a>
+					</li>
+					<li>
+						<a class="grid-week2__link navigation__link" href="weekV.html">Tydzień V</a>
+					</li>
+					<li>
+						<a class="grid-week2__link navigation__link" href="weekVI.html">Tydzień VI</a>
+					</li>
+					<li>
+						<a class="grid-week2__link navigation__link" href="weekVI.html">Tydzień VII</a>
+					</li>
+					<li>
+						<a class="grid-week2__link navigation__link" href="weekVI.html">Tydzień VIII</a>
+					</li>
+					<li>
+						<a class="navigation__link navigation__link" href="weekVI.html">Tydzień IX</a>
+					</li>
+					<li>
+						<a class="grid-week2__link navigation__link" href="weekVI.html">Tydzień X</a>
+					</li>
+					<li>
+						<a class="grid-week2__link navigation__link" href="weekVI.html">Tydzień XI</a>
+					</li>
+					<li>
+						<a class="grid-week2__link navigation__link" href="weekVI.html">Tydzień XII</a>
+					</li>
+				</ul>
+				</nav>
+			</article>
+			<article class="day">
+				<header>
+				<h3 Class="day__title">
+					GitHub Pages: statyczny hosting
+				</h3>
+			</header>
+				<p class="day__paragraph">
+					Publikacja naszej strony na GitHub Pages
+				</p>
+				<p class="day__paragraph">
+					https://nazwaUsera,github.io/nazwaRepozytorium
+				</p>
+				<p class="day__paragraph">
+					Żeby usyzkać adres:<br>
+					nazwaUsera.github.io
+				</p>
+				<p class="day__paragraph">
+					Należy nazwać repozytorium::<br>
+					nazwaUsera.github.io
+				</p>
+			</article>
+		</section>
+
+	</main>
+
+	<footer class="footer">
+		<a class="footer__link" href="#up">Wróc do góry</a>
+		<p class="footer__paragraph">Strona domowa Michała Frelika - nauka front endu!</p>
+	</footer>
+
+  <script src="/js/main.js"> </script>
+
+</body>
+
+</html>
