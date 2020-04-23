@@ -1,0 +1,701 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link href="css/main.css" rel="stylesheet" type="text/css">
+</head>
+
+<body id="up">
+	<header class="site-header">
+		<nav class="navigation">
+			<button class="navigation__switcher navigation__switcher--js" aria-label="Otwórz menu">menu</button>
+			<div class="navigation__list--weeks navigation__list--js">
+				<ul class="navigation__list--grid">
+					<li class="navigation__item">
+						<a class="navigation__link" href="weekI.html">Tydzień I</a>
+					</li>
+					<li class="navigation__item">
+						<a class="navigation__link" href="weekII.html">Tydzień II</a>
+					</li>
+					<li class="navigation__item">
+						<a class="navigation__link" href="weekIII.html">Tydzień III</a>
+					</li>
+					<li class="navigation__item">
+						<a class="navigation__link" href="weekIV.html">Tydzień IV</a>
+					</li>
+					<li class="navigation__item">
+						<a class="navigation__link" href="weekV.html">Tydzień V</a>
+					</li>
+					<li class="navigation__item">
+						<a class="navigation__link" href="weekVI.html">Tydzień VI</a>
+					</li>
+					<li class="navigation__item">
+						<a class="navigation__link" href="weekVII.html">Tydzień VII</a>
+					</li>
+					<li class="navigation__item">
+						<a class="navigation__link" href="weekVIII.html">Tydzień VIII</a>
+					</li>
+					<li class="navigation__item">
+						<a class="navigation__link" href="weekIX.html">Tydzień IX</a>
+					</li>
+					<li class="navigation__item">
+						<a class="navigation__link" href="weekX.html">Tydzień X</a>
+					</li>
+					<li class="navigation__item">
+						<a class="navigation__link" href="weekXI.html">Tydzień XI</a>
+					</li>
+					<li class="navigation__item">
+						<a class="navigation__link" href="weekXII.html">Tydzień XII</a>
+					</li>
+				</ul>
+			</div>
+			<ul class="navigation__list">
+				<li class="navigation__item">
+					<a class="navigation__link" href="index.html">Strona główna</a>
+				</li>
+				<li class="navigation__item">
+					<a class="navigation__link" href="weekIV.html">Poprzedni tydzień</a>
+				</li>
+				<li class="navigation__item">
+					<a class="navigation__link" href="weekVI.html">Następny tydzień</a>
+				</li>
+			</ul>
+		</nav>
+	</header>
+
+	<main class="main">
+		<section class="section">
+			<header class="section__header">
+				<h2 class="section__title">
+					Tydzień V
+				</h2>
+			</header>
+			<article class="day">
+				<header>
+					<h3 Class="day__title">
+						Logika w JS
+					</h3>
+				</header>
+				<h4 Class="day__subtitle">
+					Operatory porównania
+				</h4>
+				<p class="day__paragraph">
+					<strong>!=</strong>- nie równa się
+				</p>
+				<p class="day__paragraph">
+					if ('JavaScript' != 'Java') {
+					//wykonaj kod jeśli
+					}
+				</p>
+				<p class="day__paragraph">
+					<strong>Porównania:</strong>
+				</p>
+				<p class="day__paragraph">
+					> - lewa strona większa od prawej<br>
+					< - prawa strona większa od lewej<br>
+						>= - lewa strona większa równa od prawej<br>
+						<= - prawa strona większa równa od lewej<br>
+							== - obie strony równe<br>
+							=== - obie strony równe (typeof - sprawdza typ liczba czy string)<br>
+							!= - obie strony różne<br>
+							!== - obie strony różne (typeof - sprawdza typ liczba czy string)<br>
+				</p>
+				<h4 Class="day__subtitle">
+					Zmienna typeof - definiuje typ danych, czy jest do liczba czy string
+				</h4>
+				<p class="day__paragraph">
+					const liczba = 7 - liczba<br>
+					const liczbaString = '7' - string (apostrof ' ' robi różnicę)
+				</p>
+				<p class="day__paragraph">
+					liczba == liczbaString - <strong>true</strong>- JS konwertuje wszystko na string, dlatego równanie
+					jest prawdziwe<br>
+					liczba === liczbaString - <strong>false</strong>- typeof sprawdza dokładniej typ danych, rozróżnia
+					string od liczby<br><br>
+					Zaleca się używanie potrójnego porównania (typeof) - kod będzie bezpieczniejszy<br>
+					liczba != liczbaString - <strong>false</strong><br>
+					liczba !== liczbaString - <strong>true</strong>
+				</p>
+				<div class="list">
+					<p class="list__title">Falsy - 6 wartości:</p>
+					<ul class="list__totality">
+						<li class="list__item list__item--circle">false</li>
+						<li class="list__item list__item--circle">'' ; "" ; `` - pusty string (w JS można używać
+							wszystkich apostrofów - zalecane '')</li>
+						<li class="list__item list__item--circle">0</li>
+						<li class="list__item list__item--circle">null</li>
+						<li class="list__item list__item--circle">undefined</li>
+						<li class="list__item list__item--circle">NaN - not a number</li>
+						<li class="list__item list__item--circle">false</li>
+
+					</ul>
+				</div>
+				<div class="list">
+					<p class="list__title">Truthy - cała reszta:</p>
+					<ul class="list__totality">
+						<li class="list__item list__item--circle">'tekst'</li>
+						<li class="list__item list__item--circle">12</li>
+						<li class="list__item list__item--circle">-4</li>
+						<li class="list__item list__item--circle">{}</li>
+						<li class="list__item list__item--circle">[]</li>
+						<li class="list__item list__item--circle">true itd.</li>
+					</ul>
+				</div>
+				<h4 Class="day__subtitle">
+					AND - && - wszystkie warunki muszą być true
+				</h4>
+				<p class="day__paragraph">
+					if ((myVariable == 4) && (myVariable == 'tekst')) {...}
+				</p>
+				<h4 Class="day__subtitle">
+					OR - || - przynajmniej jeden warunek ma być true
+				</h4>
+				<p class="day__paragraph">
+					if ((myVariable == 4) || (myVariable != 'tekst')) {...}
+				</p>
+				<h4 Class="day__subtitle">
+					NOT - ! - odwraca wartość wyrażenia logicznego
+				</h4>
+				<p class="day__paragraph">
+					if (!('JavaScript' == 'Java') {...}<br>
+					!false => true<br>
+					!true => false
+				</p>
+				<h4 Class="day__subtitle">
+					ELSE
+				</h4>
+				<p class="day__paragraph">
+					if ((myVariable == 4) { <br>
+					//wykonaj kod jeśli true<br>
+					}ELSE {<br>
+					//wykonaj kod jeśli false<br>
+					}
+				</p>
+				<h4 Class="day__subtitle">
+					ELSE IF
+				</h4>
+				<p class="day__paragraph">
+					if (myVariable == 4) { <br>
+					//wykonaj kod jeśli true<br>
+					}ELSE IF (myVariable ==8){<br>
+					//wykonaj kod jeśli myVariable == 8<br>
+					}<br>
+				</p>
+				<h4 Class="day__subtitle">
+					SWITCH
+				</h4>
+				<p class="day__paragraph">
+					switch (myVariable) { <br>
+					case 4:<br>
+					console.log('tekst 4');<br>
+					break;<br>
+					case 8:<br>
+					console.log('test 8');<br>
+					break;<br>
+					default:<br>
+					console.log('defaulte response');<br>
+					break;<br>
+					}<br>
+				</p>
+				<h4 Class="day__subtitle">
+					Zapis skkrócony IF
+				</h4>
+				<p class="day__paragraph">
+					(zmienna1 > zmianna2) ? console.log('true') : console.log('false')<br>
+					const amIOld = (age>70) ? 'yes' : 'no' ; <br>
+					console.log(amIOld);<br><br>
+					To samo:<br><br>
+					let oldindicatior;<br>
+					if (age > 70){<br>
+					oldindicatior = 'yes'<br>
+					} ELSE {<br>
+					oldindicatior = 'no'<br>
+					}
+					if (myVariable == 4) { <br>
+					//wykonaj kod jeśli true<br>
+					}ELSE IF (myVariable ==8){<br>
+					//wykonaj kod jeśli myVariable == 8<br>
+					}<br>
+				</p>
+			</article>
+			<article class="day">
+				<header>
+					<h3 Class="day__title">
+						JS : funkcje
+					</h3>
+				</header>
+				<p class="list__title">Czym jest funkcja?</p>
+				<ul class="list__totality">
+					<li class="list__item list__item--circle">na wejściu dostaje dane - argumenty</li>
+					<li class="list__item list__item--circle">dla każdego argumentu zwraca jakąś wartość</li>
+					<li class="list__item list__item--circle">posiada określony wzór</li>
+				</ul>
+				<p class="day__paragraph">
+					f(x)=x*7<br>
+					f(x) - argument <br>
+					x*7 - wynik<br><br>
+					function calculate (x) {return x*7;}<br>
+					function - deklaracja<br>
+					(x) - parametr<br>
+					return - słowo kluczowe<br>
+					x*7 - wynik<br><br>
+					function calculate (x){<br>
+					x=x+3;<br>
+					console.log(x);
+					retunr x*7:<br>
+					}
+				</p>
+				<p class="day__paragraph">
+					W funkcji możemy zawierać wykonywanie akcji, czasami może być bez argumentu (funkcjie
+					bezargumentowe - może tak być)
+				</p>
+				<div class="list">
+					<p class="list__title">Wywołanie funckcji:</p>
+					<ul class="list__totality">
+						<li class="list__item list__item--circle">jej nazwa + argument<br>
+							calculate(2);</li>
+						<li class="list__item list__item--circle">console.log(calculate(2))</li>
+						<li class="list__item list__item--circle">const myCalculation = calculate (4)<br>
+							console.log(myCalculation)</li>
+					</ul>
+				</div>
+				<div class="list">
+					<p class="list__title">Funkcja w JS:</p>
+					<ul class="list__totality">
+						<li class="list__item list__item--circle">Deklarujemy nazwę funckcji (nie zawsze trzeba)
+						</li>
+						<li class="list__item list__item--circle">W środku dokonujemy obliczenia / wykonujemy
+							zadania</li>
+						<li class="list__item list__item--circle">Funkcja przyjmuje argumenty (ale nie musi)</li>
+						<li class="list__item list__item--circle">Funkcja zwraca zawsze coś (nawet jeśli nie mamy
+							return - wtedy zwraca undefined)</li>
+					</ul>
+				</div>
+				<div class="list">
+					<p class="list__title">Funkcje po co?</p>
+					<ul class="list__totality">
+						<li class="list__item list__item--circle">Deklarujemy kod, który się powtarza (DRY - Don't
+							Repeat Yourself) - jeśli mamy coś (np. kod)
+							co się powtarza, to dobrze to umieścić w funkcji</li>
+						<li class="list__item list__item--circle">Zwiększamy czytelność kodu</li>
+						<li class="list__item list__item--circle">Łatwiejsze szukanie błęów</li>
+						<li class="list__item list__item--circle">Odpowiedzialność za wykonywanie zadania wjednym
+							miejscu</li>
+					</ul>
+				</div>
+				<h4 Class="day__subtitle">
+					=> (FAT) arrow function (funkce strzałkowe)
+				</h4>
+				<p class="day__paragraph">
+					const calculateFat = x => {<br>
+					x=x+3<br>
+					console.log(x);<br>
+					return x*7<br>
+					+ console.log - wywołanie<br><br>
+					const. calculateFat = x => (x+3)*7 - zapis skrócony FAT<br>
+					+ console.log - wywołanie
+				</p>
+				<div class="list">
+					<p class="list__title">=> (FAT) arrow function (funkce strzałkowe)</p>
+					<ul class="list__totality">
+						<li class="list__item list__item--circle">Zwiększa czytelność (dyskusyjne)</li>
+						<li class="list__item list__item--circle">Zwiększamy czytelność kodu</li>
+						<li class="list__item list__item--circle">Nie tworzy nowego kontekstu this, nie ma dostępu
+							do arguments i super/li>
+						<li class="list__item list__item--circle">Nie jest zamiennikiem "tradycujnej" funkcji (ale w
+							większości przypadków nie zobaczysz
+							różnicy)</li>
+					</ul>
+				</div>
+			</article>
+			<article class="day">
+				<header>
+					<h3 Class="day__title">
+						U mnie (nie) działa
+					</h3>
+				</header>
+				<p class="day__paragraph">
+					<strong>Debugging</strong>- proces usuwania błędów i ich wyszukiwania
+				</p>
+				<div class="list">
+					<p class="list__title">Co robić jak nie działa?</p>
+					<ol class="list__totality">
+						<li class="list__item">Sprawdź czy plik jest zapisany.</li>
+						<li class="list__item">Sprawdź czy edytujesz właściwy plik</li>
+						<li class="list__item">Sprawdź czy odświerzyłeś przeglądarkę usuwając tzw. cache (oamięć
+							tymczasowa)<br>
+							devtools -> Network -> Disable cache (usuwa pliki zapisane tymczasowo, powoduje
+							wczytywanie
+							wszystkich plików na nowo)</li>
+						<li class="list__item">Sprawdź czy nie masz błędów w edytorze / w devtoolsach
+							<ul class="list__totality">
+								<li class="list__item">np. czerwona fala w edytorze</li>
+								<li class="list__item">devtoolsy mówuą gdzie jest błąd, co jest nie
+									tak</li>
+								<li class="list__item">sprawdź DOM można wyłapać błędy w HTML-u
+								</li>
+							</ul>
+						</li>
+						<li class="list__item">Zajrzyj w zakładkę Network - widać czy coś się nie wczytuje</li>
+						<li class="list__item">"Pogadaj z kaczką" - przeczytaj niby komuś na głos</li>
+						<li class="list__item">Google it!
+							<ul class="list__totality">
+								<li class="list__item">warto skopiować do googla nazwę błędu z
+									konsoli</li>
+								<li class="list__item">najlepiej odpowiedzi szukać do roku wstecz
+									(częste zmiany we
+									frontendzie)<br>
+									<strong>Nie korzystamy ze strony w3schools</strong> - dużo przeterminowanych
+									informacji<br>
+									w3c != w3schools</li>
+							</ul>
+						</li>
+						<li class="list__item">Stack Overflow - strona internetowa
+							<ul class="list__totality">
+								<li class="list__item">warto patrzeć na odpowiedzi mające
+									najwięcej plusów</li>
+								<li class="list__item">najlepiej do roku wstecz</li>
+							</ul>
+						</li>
+					</ol>
+				</div>
+				<div class="list">
+					<p class="list__title">Spoko źródła</p>
+					<ul class="list__totality">
+						<li class="list__item list__item--circle">Dokumentacja narzędzia z którego korzystasz np.
+							visual code studio docs</li>
+						<li class="list__item list__item--circle">GitHub issues</li>
+						<li class="list__item list__item--circle"><a class="web-link" href="https://developer.mozilla.org">
+								https://developer.mozilla.org </a>- Polecane do
+							JS,
+							specyfikacje</li>
+						<li class="list__item list__item--circle"><a class="web-link" href="https://devdocs.io/">https://devdocs.io/
+							</a>- zbiór dokumentacji różnych
+							języków (działa offline)</li>
+						<li class="list__item list__item--circle"><a class="web-link"
+								href="https://caniuse.com/">https://caniuse.com/
+								- sprawdzanie wsparcia
+								przeglądarek dla różnych fubckcji</li>
+						<li class="list__item list__item--circle"><a class="web-link"
+								href="https://css-tricks.com/almanac/">https://css-tricks.com/almanac/ - sprawdzanie
+								własności CSS-owych ; artykuły</li>
+						<li class="list__item list__item--circle"><a class="web-link"
+								href="https://www.w3.org/TR/html52/">https://www.w3.org/TR/html52/</a> - specyfikacja
+							HTML-a</li>
+						<li class="list__item list__item--circle"><a class="web-link"
+								href="https://www.w3.org/TR/CSS/">https://www.w3.org/TR/CSS/ </a>- specyfikacja CSS</li>
+					</ul>
+				</div>
+				<div class="list">
+					<p class="list__title">
+						Grupy - fb
+					</p>
+					<ul class="list__totality">
+						<li class="list__item list__item--circle"><a class="web-link"
+								href="https://www.facebook.com/groups/742940452405327/">HTML, CSS i JS: pierwsze
+								kroki</a>
+						</li>
+						<li class="list__item list__item--circle"><a class="web-link"
+								href="https://www.facebook.com/groups/1485218891734165/">Front-end: pierwsza praca w
+								HTML5, CSS3 i
+								JavaScript</a></li>
+						<li class="list__item list__item--circle"><a class="web-link"
+								href="https://www.facebook.com/groups/157790704649699/">Programowanie - wsparcie na
+								starcie</a>
+						</li>
+						<li class="list__item list__item--circle"><a class="web-link"
+								href="https://www.facebook.com/groups/programujdziewczyno/">Programuj dziewczyno</a>
+						</li>
+						<li class="list__item list__item--circle"><a class="web-link"
+								href=https://crossweb.pl>https://crossweb.pl/</a> - Grupy lokalnych spotkań
+							programistycznych
+							(meet.js, dev.js)</li>
+					</ul>
+				</div>
+			</article>
+			<article class="day">
+				<header>
+				<h3 Class="day__title">
+					HTML: listy, tabele, definicje
+				</h3>
+				</header>
+				<h4 class="day__subtitle">
+					Test tabeli
+				</h4>
+				<table class="table">
+					<caption>Oceny z przedmiotu WTF</caption>
+					<thead class="table__thead">
+						<tr>
+							<th class="table__inside-border">Imię nazwisko</th>
+							<th class="table__inside-border">Ocena</th>
+							<th class="table__inside-border">Data</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="table__inside-border">Michał Frelik</td>
+							<td class="table__inside-border">3</td>
+							<td class="table__inside-border">31.03.2020</td>
+						</tr>
+						<tr>
+							<td class="table__inside-border">Maciek Korsan</td>
+							<td class="table__inside-border">6</td>
+							<td class="table__inside-border">31.03.2019</td>
+						</tr>
+					</tbody>
+				</table>
+				<h4 class="day__subtitle">
+					Znaczniki HTML
+				</h4>
+				<p class="day__paragraph">
+					<strong>ul</strong> - unorderd list - lista nieuporządkowana (zawiera w sobie li)
+				</p>
+				<p class="day__paragraph">
+					<strong>li</strong> - list item - lista elementów
+				</p>
+				<p class="day__paragraph">
+					<strong>ol</strong> - orderd list - lista uporządkowana (zawiera w sobie li)
+				</p>
+				<p class="day__paragraph">
+					<strong>list-style</strong> - styl listu (można zmieniać)
+				</p>
+				<p class="day__paragraph">
+					<strong>nav</strong> - navigation - łączy się bezpośrednio z listami - poprawne semantycznie
+				</p>
+				<p class="day__paragraph">
+					<strong>dl</strong> - description list - lista opisów
+				</p>
+				<p class="day__paragraph">
+					<strong>dt</strong> - description term
+				</p>
+				<p class="day__paragraph">
+					<strong>dd</strong> - description details
+				</p>
+				<p class="day__paragraph">
+					<strong>table</strong> - tabela
+				</p>
+				<p class="day__paragraph">
+					<strong>tr</strong> - table row - wiersz tabeli
+				</p>
+				<p class="day__paragraph">
+					<strong>td</strong> -table data (cell) - komórka tabeli
+				</p>
+				<p class="day__paragraph">
+					<strong>thead</strong> - nagłóweg tabeli
+				</p>
+				<p class="day__paragraph">
+					<strong>th</strong> - kórka w nagłówku tabeli
+				</p>
+				<p class="day__paragraph">
+					<strong>tbody</strong> - "ciało" tabeli
+				</p>
+				<p class="day__paragraph">
+					<strong>caption</strong> - opis tabeli
+				</p>
+				<p class="day__paragraph">
+					<strong>Tabel używyamy,</strong> gdy prezentujemy dane tabelaryczne. Nie używamy tabel do budowania
+					layoutów
+				</p>
+			</article>
+			<article class="day">
+				<header>
+				<h3 Class="day__title">
+					Normalizacja vs reset
+				</h3>
+				</header>
+				<p class="day__paragraph">
+					Przeglądarka posiada swoje domyślne style - <strong>user agent stylesheet</strong> (devtoolsy)
+				</p>
+				<p class="day__paragraph">
+					<strong>Domyślne style nie wszędzie (nie w każdej przeglądarce) są takie same!</strong>
+				</p>
+				<h4 class="day__subtitle">
+					Reset - usówa domyślne style przeglądarek
+				</h4>
+				<p class="day__paragraph">
+					Typowy reset :<br><br>
+					*{<br>
+					margin: 0;<br>
+					padding: 0; <br>
+					outline: none;<br>
+					}<br><br>
+					ul, ol {<br>
+					list-style: none;<br>
+					}<br><br>
+					<strong>Nie stosujemy takiego resetu</strong>
+				</p>
+				<h4 class="day__subtitle">
+					Normalizacja - służy do wyrównywania styli w przeglądarkach, nie resetowniu
+				</h4>
+				<div class="attention">
+					normalize.css - plik do pobrania
+				</div>
+				<p class="day__paragraph">
+					Ujednolica style między różnymi przeglądarkami
+				</p>
+				<div class="attention">
+					Nejlepsza praktyka:<br>
+					normalize.css<br>
+					+<br>
+					html{<br>
+					box-sizing: border-box;<br>
+					}<br>
+					*, *:before, *:after {<br>
+					box-sizing: inherit;<br>
+					}
+				</div>
+				<p class="day__paragraph">
+					Wszystkie elementy są domyślnie - border-box (nie trzeba definiować bodrer-boxów - wymiarry będą
+					całkowite)<br>
+					inherit - dziedziczenie
+				</p>
+				<p class="day__paragraph">
+					Zewnętrznych plików nie edytujemy - dobra praktyka
+				</p>
+			</article>
+			<article class="day">
+				<header>
+				<h3 Class="day__title">
+					Flexbox
+				</h3>
+				</header>
+				<h4 class="day__subtitle">
+					Flexbox - CSS
+				</h4>
+				<p class="day__paragraph">
+					<strong>display: flex</strong> - zamienia domyślny display: block na nowy system pozycjonowania i
+					rozmieszczania
+					elementów - pracuje w dówch osiach (pionowa -column i pozioma-row)
+				</p>
+				<p class="day__paragraph">
+					<strong>flex-direction:</strong> (row - domyślne, column, row-reverse, column-reverse)
+				</p>
+				<p class="day__paragraph">
+					<strong>flex-wrap:</strong> (nowrap - domyślne, wrap, wrap-reverse) - zawijanie wierszy/kolumn
+				</p>
+				<p class="day__paragraph">
+					<strong>flex-flow:</strong> row nowrap; - domyślne (zastępuje dwie powyższe)
+				</p>
+				<p class="day__paragraph">
+					<strong>justyfi-content:</strong> (flex-start - domyślne(boxy przyklejają się do lewej/górnej
+					krawędzi zależnie od flow-direction), flex-end, centerm, space-between(przerwa pomiędzy -
+					dostosowuje do całej szerokości), space-around(dodaje jeszcze marginesy na końcach strony)) -
+					ustawienie elementów wzdłuż osi flex-direction
+				</p>
+				<p class="day__paragraph">
+					<strong>align-content:</strong> (stretch - domyśnie (rozciąga maksymalnie), flex-start, flex-end,
+					center, space-between, space-around) - ustawienie wierszy/kolumn wzdłuż osi przeciwnej do
+					flex-direction (taki justyfi-content dla drugiej osi)
+				</p>
+				<p class="day__paragraph">
+					<strong>align-item:</strong> (stretch, flex-start, flex-end, center, baseline - elementy ustawiają
+					się według wiersza tekstu w przypadku różnych wielkości fontów (teksty zaczynają się w tym samym
+					miejcu)) - ustawienie elementów wzdłuż osi przeciwnej do flex-direction ale w obrębie pojedynczego
+					wiersza)
+				</p>
+				<p class="day__paragraph">
+					<strong>align-self:</strong> (stretch, flex-start, flex-end, center, baseline) - ustawienie elementu
+					wzdłuż osi przeciwnej do flex-direction (możemy pozycjonować pojedynczy element w wierszu)
+				</p>
+				<p class="day__paragraph">
+					<strong>order</strong> (0 , liczba całkowita (+/-)) ustala kolejność)
+				</p>
+				<p class="day__paragraph">
+					<strong>flex-grow:</strong> (0 , liczba/proporcja) - powoduje rośnięcie elementu (1 - domyślne)
+				</p>
+				<p class="day__paragraph">
+					<strong>flex-shtink:</strong> (1 , liczba/proporcja) - powoduje kurczenie elementu (1 - domyślne)
+				</p>
+				<p class="day__paragraph">
+					flex-grow i flex-shtink można stosować razem
+				</p>
+				<p class="day__paragraph">
+					<strong>flex-basis:</strong> (none, rozmiar bazowy) - domyślny rozmiar elementów
+				</p>
+				<p class="day__paragraph">
+					<strong>flex:</strong> flex-grow flex-shrink flex-basis - skrót
+				</p>
+			</article>
+			<article class="day">
+				<header>
+				<h3 Class="day__title">
+					Tła
+				</h3>
+				</header>
+				<p class="day__paragraph">
+					<strong>flex:</strong> flex-grow flex-shrink flex-basis - skrót
+				</p>
+				<p class="day__paragraph">
+					<strong>backgroun-image:</strong> url('ścieżka do pliku')
+				</p>
+				<p class="day__paragraph">
+					<strong>background-position:</strong> (0 0 ; top top ; bottom bottom ; center center (środek tła
+					zawsze będzie na środku strony) ; xx% xx% ; xxpx xxpx , ... ...;) - ustawia tło względem elementu ,
+					który to tło dostaje
+				</p>
+				<p class="day__paragraph">
+					<strong>backgroun-repeat:</strong> (repeat - domyślne ; repeat-x ; repeat-y ; no-repeat ; round -
+					otacza cały element (przycina) ; space - działa jak flexbox (nie przycina)) - powtarzanie tła
+				</p>
+				<p class="day__paragraph">
+					<strong>backgroun-attachment:</strong> (scroll - domyślne, tło idzie za stroną ; fixed - tło się nie
+					rusza ; local (local + height: xx + overflow:scroll - powoduje skrolowanie tła w jakimś mniejszym
+					okienku))
+				</p>
+				<p class="day__paragraph">
+					<strong>backgroun-origin:</strong> (padding-box - domyślne ; border-box ; content-box) - definiuje w
+					którym miejscu tło powinno się zaczynać (mało wykorzystywane)
+				</p>
+				<p class="day__paragraph">
+					<strong>background-clip:</strong> (padding-box ; border-box ; content-box) - mówi w którym miejscu
+					tło powinno być cięte
+				</p>
+				<p class="day__paragraph">
+					<strong>backgroun-color:</strong> wartość koloru
+				</p>
+				<p class="day__paragraph">
+					<strong>rgb(a):</strong>tło półprzźroczyste (255 255 255 0,5) - 50%
+				</p>
+				<p class="day__paragraph">
+					<strong>background-size:</strong>(auto - domyślne ; cover - zawsze wypełnia stronę ; contain - cały
+					obrazek jest widoczny (dopasowuje się) ; width height) - jak duże ma być tło
+				</p>
+				<p class="day__paragraph">
+					<strong>Gradienty - </strong>strona do generowania <a class="web-link" href="https://cssgradient.io/gradient-backgrounds/"> gradientów </a>
+				</p>
+				<p class="day__paragraph">
+					<strong>background:</strong> - opis skrócony - może nadpisywać wszystki powyższe wartości (zawiera
+					je w sobie)
+				</p>
+			</article>
+			<article class="day">
+				<h3 Class="day__title">
+					Grafik cięcie też zajęcie
+				</h3>
+				<p class="day__paragraph">
+					Skolowanie repozytrium z githuba na komputer - terminal - wiebieramy miejsce na dysku - git clone
+					<em>link</em>
+				</p>
+				<p class="day__paragraph">
+					Resetowanie hasła na githubie : git config --global --unset cedential.helper + git config
+					credential.helper
+				</p>
+			</article>
+		</section>
+
+	</main>
+
+
+	<footer class="footer">
+		<a class="footer__link" href="#up">Wróc do góry</a>
+		<p class="footer__paragraph">Strona domowa Michała Frelika - nauka front endu!</p>
+	</footer>
+
+  <script src="/js/main.js"> </script>
+
+</body>
+
+</html>

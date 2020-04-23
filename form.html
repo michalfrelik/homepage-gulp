@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link href="css/main.css" rel="stylesheet" type="text/css">
+</head>
+
+<body id="up">
+	<header class="site-header">
+		<nav class="navigation">
+			<ul class="navigation__list">
+				<li class="navigation__item">
+					<a class="navigation__link" href="index.html">Strona główna</a>
+				</li>
+			</ul>
+		</nav>
+	</header>
+
+	<main class="main">
+		<article class="article">
+			<h3 Class="day__title">
+				Formularze
+			</h3>
+			<form class="form" action="http://dev.cotenfrontend.pl" method="post">
+				<p>
+					<label for="name">Imię:</label>
+					<input class="form__window" required name="name" placeholder="proszę podać imię" id="name">
+				</p>
+				<p>
+					<label for="surname">Nazwisko:<br>
+						<input class="form__window" type="text" value="Frelik" name="surname" id="surname">
+					</label>
+				</p>
+				<p>
+					<label for="age">Wiek:<br>
+						<input class="form__window" type="number" value="26" name="age" id="age">
+					</label>
+				</p>
+				<p>
+					<label for="telephone">Numer telefonu:<br>
+						<input class="form__window" type="tel" name="telephone" id="telephone">
+					</label>
+				</p>
+				<p>
+					<label for="email">Adres email:<br>
+						<input class="form__window" type="email" name="email" id="email">
+					</label>
+				</p>
+
+				<fieldset class="form__fieldset">
+					<legend>Opcje</legend>
+					<p>
+						<input type="radio" name="radio" id="radio1">
+						<label for="radio1">Opcja 1</label>
+					</p>
+					<p>
+						<input type="radio" name="radio" id="radio2">
+						<label for="radio2">Opcja 2</label>
+					</p>
+					<p>
+						<input type="radio" name="radio1" id="radio3">
+						<label for="radio3">Opcja 3</label>
+					</p>
+					<p>
+						<input type="radio" checked value="opcja 4" name="radio1" id="radio4">
+						<label for="radio4">Opcja 4</label>
+					</p>
+				</fieldset>
+
+				<p>
+					<input type="checkbox" value="opcja 4" name="mycheckbox" id="mycheckbox1">
+					<label for="mycheckbox1">Check 1</label>
+				</p>
+				<p>
+					<input type="checkbox" checked value="opcja 4" name="mycheckbox" id="mycheckbox2">
+					<label for="mycheckbox2">Check 2</label>
+				</p>
+				<p>
+					<label for="range">Check 2</label><br>
+					<input type="range" min="0" max="100" step="10" value="70" name="range" id="range">
+				</p>
+				<p>
+					<label for="password">Password</label><br>
+					<input type="password" name="password" id="password" required
+						pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).*$">
+				</p>
+				<p>
+					<label for="file">Twój avatar </label><br>
+					<input type="file" name="file" id="file">
+				</p>
+
+				<p>
+					<label for="select">Proszę wybrać odpowiedź</label>
+					<select name="select" id="select">
+						<option value="user selected yes">tak</option>
+						<option value="user selected no">nie</option>
+						<option value="user selected maybe">może</option>
+					</select>
+				</p>
+
+				<p>
+					<label for="textarea">Proszę opisać problem</label><br>
+					<textarea id="textarea" name="textarea"></textarea>
+				</p>
+
+				<input type="submit" value="Wyślij formularz">
+			</form>
+		</article>
+
+	</main>
+
+	<footer class="footer">
+		<a class="footer__link" href="#up">Wróc do góry</a>
+		<p class="footer__paragraph">Strona domowa Michała Frelika - nauka front endu!</p>
+	</footer>
+
+	<script src="../Homepage/js/main.js"> </script>
+
+</body>
+
+</html>

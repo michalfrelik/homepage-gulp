@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link href="css/main.css" rel="stylesheet" type="text/css">
+</head>
+
+<body id="up">
+	<header class="site-header">
+		<nav class="navigation">
+				<button class="navigation__switcher navigation__switcher--js" aria-label="Otwórz menu">menu</button>
+				<div class="navigation__list--weeks navigation__list--js">
+					<ul class="navigation__list--grid">
+						<li class="navigation__item">
+							<a class="navigation__link" href="weekI.html">Tydzień I</a>
+						</li>
+						<li class="navigation__item">
+							<a class="navigation__link" href="weekII.html">Tydzień II</a>
+						</li>
+						<li class="navigation__item">
+							<a class="navigation__link" href="weekIII.html">Tydzień III</a>
+						</li>
+						<li class="navigation__item">
+							<a class="navigation__link" href="weekIV.html">Tydzień IV</a>
+						</li>
+						<li class="navigation__item">
+							<a class="navigation__link" href="weekV.html">Tydzień V</a>
+						</li>
+						<li class="navigation__item">
+							<a class="navigation__link" href="weekVI.html">Tydzień VI</a>
+						</li>
+						<li class="navigation__item">
+							<a class="navigation__link" href="weekVII.html">Tydzień VII</a>
+						</li>
+						<li class="navigation__item">
+							<a class="navigation__link" href="weekVIII.html">Tydzień VIII</a>
+						</li>
+						<li class="navigation__item">
+							<a class="navigation__link" href="weekIX.html">Tydzień IX</a>
+						</li>
+						<li class="navigation__item">
+							<a class="navigation__link" href="weekX.html">Tydzień X</a>
+						</li>
+						<li class="navigation__item">
+							<a class="navigation__link" href="weekXI.html">Tydzień XI</a>
+						</li>
+						<li class="navigation__item">
+							<a class="navigation__link" href="weekXII.html">Tydzień XII</a>
+						</li>
+					</ul>
+				</div>
+				<ul class="navigation__list">
+					<li class="navigation__item">
+						<a class="navigation__link" href="index.html">Strona główna</a>
+					</li>
+					<li class="navigation__item">
+						<a class="navigation__link" href="weekIII.html">Poprzedni tydzień</a>
+					</li>
+					<li class="navigation__item">
+						<a class="navigation__link" href="weekV.html">Następny tydzień</a>
+					</li>
+				</ul>
+		</nav>
+	</header>
+
+	<main class="main">
+		<section class="section">
+			<header class="section__header">
+				<h2 class="section__title">
+					Tydzień IV
+				</h2>
+			</header>
+			<article class="day">
+				<header>
+				<h3 Class="day__title">
+					GIT
+				</h3>
+				</header>
+				<div class="list">
+					<p class="list__title">Konfiguracja</p>
+					<ol class="list__totality">
+						<li class="list__item">Uruchamiamy Terminal.</li>
+						<li class="list__item">Wpisujemy <strong>git config --global user.name "Jan Nowak"</strong></li>
+						<li class="list__item">Wpisujemy <strong>git config --global user.email</strong></li>
+						<li class="list__item">Sprawdzenie <em>git config --get user.name / user.email</em></li>
+					</ol>
+				</div>
+				<h4 Class="day__subtitle">
+					CTRL + C - kasuje ostatnie polecenie w terminalu bez jeko wykonywania
+				</h4>
+				<h4 Class="day__subtitle">
+					Instalując HIT-a na Windowsa instalujemy również GIT BASH-a - terminal linuksowy
+				</h4>
+				<h4 Class="day__subtitle">
+					Konfiguracja projektu (REPORYTORIUM = PROJEKT)
+				</h4>
+				<div class="list">
+					<p class="list__title"><strong>Reporytorium</strong>- opis, mapa wszystkich plików znajdujących się
+						w projekcie</p>
+					<ol class="list__totality">
+						<li class="list__item">Wchodzimy, przez terminal, do katalogu projektu (Homepage).</li>
+						<li class="list__item">Komenda: <strong>git init</strong> - założenie reporytorium (git tworzy
+							ukryty katalog
+							<strong>.git</strong>-
+							przechowucje historię, pliki itp <strong>nie wolno go usuwać</strong>)</li>
+					</ol>
+				</div>
+				<div class="list">
+					<p class="list__title">Komendy:</p>
+					<ul class="list__totality">
+						<li class="list__item list__item--circle"><strong>git status</strong>- wyświetla status git-a
+						</li>
+						<li class="list__item list__item--circle"><strong>git add .</strong>- dodaje wszystkie katalogi,
+							elementy do git-a</li>
+						<li class="list__item list__item--circle"><strong>git add <em>index.html</em></strong>- dodaje
+							konkretny katalog do git-a</li>
+						<li class="list__item list__item--circle"><strong>gitk</strong>- narzędzie do podglądania zmian
+							w naszym repozytorium (projekcie)</li>
+						<li class="list__item list__item--circle"><strong>git push</strong>- wypchnięcie commitów do
+							<strong>GitHub-a</strong></li>
+						<li class="list__item list__item--circle"><strong>git commit -m "nazwa commitu"</strong>- dodaje
+							nowy commit o podanej nazwie</li>
+					</ul>
+				</div>
+				<h4 Class="day__subtitle">
+					Commit = stan projektu (opis tego co się zmieniło od ostatniego zapisu)
+				</h4>
+				<p class="day__paragraph">
+					<strong>Jak często commitować?</strong><br>
+					Commitujemy tak często, jak często wprowadzamy zmiany do strony (istotne zmiany). Lepiej częściej
+					niż
+					rzadziej
+				</p>
+				<h4 Class="day__subtitle">
+					git lens - rozszerzenie do Visual Studio Code (pozwala na śledzenie zmian)
+				</h4>
+				<header class="attention">
+					GitHub != Git
+				</header>
+				<p class="day__paragraph">
+					<strong>GitHub</strong>- platforma pozwalająca na publikowanie kodu z git-a
+					lokalnego na
+					serwer zewnętrzny (GitHubowski), w taki sposób, że inni użytkownicy są w stanie podejrzeć kod
+					(programistyczna
+					wizytówka)
+				</p>
+				<div class="list">
+					<p class="list__title">GIT Podsumowanie:</p>
+					<ul class="list__totality">
+						<li class="list__item list__item--circle">GIT pozwala na sprawne zarządzanie zmianami w
+							projekcie</li>
+						<li class="list__item list__item--circle">Działa lokalnie</li>
+						<li class="list__item list__item--circle">Do działania zdalnego potrzebuje serwera (np. GitHub)
+						</li>
+						<li class="list__item list__item--circle">Znajomość podstaw GIT-a jest wymagana niezależnie od
+							technologii</li>
+						<li class="list__item list__item--circle">Konto na GitHubie jest Twoją programistyczną
+							wizytówką, zadbaj aby była ładna i prawdziwa
+							(prawdziwe dane,
+							dużo projektów, cużo commitów)</li>
+						<li class="list__item list__item--circle">Commitujemy jak dokładamy jakąś widoczną zmianę do
+							projektu (lepiej częściej, niż za mało)e</li>
+						<li class="list__item list__item--circle">Podstawowy ﬂow: git add . / git commit -m "opis
+							zmiany" / git push</li>
+					</ul>
+				</div>
+			</article>
+			<article class="day">
+				<header>
+				<h3 Class="day__title">
+					Upiększanie
+				</h3>
+				</header>
+				<p class="day__paragraph">
+					Przydatna strona - colors.co (colors genarator)
+				</p>
+				<p class="day__paragraph">
+					<strong>ctrl + f (funkca replace)</strong>- znajduje wszystkie ciągi znaków i
+					pozwala na
+					zastąpienie ich na raz,nowym ciągiem znaków
+				</p>
+				<p class="day__paragraph">
+					To samo sylowanie 2 (lub więcej klas) - po przecinku np. .class1 , .class2 { ...}
+				</p>
+			</article>
+			<article class="day">
+				<header>
+				<h3 Class="day__title">
+					Życie w pudełu I
+				</h3>
+				</header>
+				<h4 Class="day__subtitle">
+					BOX MODEL
+				</h4>
+				<p class="day__paragraph">
+					Świat stron internetowych jest płaski (prawie płaski)
+				</p>
+				<p class="day__paragraph">
+					<strong>display: block</strong>- blokiem jest paragraf, sekcja, main itp. Pragraf
+					przyjmuje maksymalną szerokość bloku w którym się znajduje (np. praragraf przyjmuje szerokość sekcji
+					w
+					której się znajduje). Wyświetla się na całą szerokość "rodzica"<br>
+					<strong>display: inline</strong>- nie rozpycha się jak display: block, nie przenosi tekstu do nowej
+					linii,
+					zajmuje dokładnie tyle ile dany tekst np. strong, b, en, i<br>
+					<strong>display: inline-block</strong>
+				</p>
+				<p class="day__paragraph">
+					<strong>BOX MODEL</strong><br>
+					Wszystkie elementy wrzucone na stronę otoczone są "niewidzialnym prostokątem"
+				</p>
+				<div class="img__position">
+					<img class="img__box-model" src="/assets/img/BoxModel.JPG" alt="Box Model">
+				</div>
+				<p class="day__paragraph">
+					<strong>margin</strong>- margines<br>
+					<strong>border</strong>- obramowanie<br>
+					<strong>padding</strong>- wewnętrzny margines<br>
+					<strong>element</strong>
+				</p>
+				<p class="day__paragraph">
+					padding-top: 3px;<br>
+					padding-right: 4 px;<br>
+					padding-bottom: 5 px;<br>
+					padding-left: 6px;<br>
+					<strong>Można to zapisać:</strong> padding: 3px 4px 5px 6px;
+				</p>
+				<p class="day__paragraph">
+					padding: 3px 4px 3px 4px;<br>
+					<strong>Można to zapisać:</strong> padding: 3px 4px; (wartości lustrzane)
+				</p>
+				<p class="day__paragraph">
+					padding: 3px 3px 3px 3px;<br>
+					<strong>Można to zapisać:</strong> padding: 3px;
+				</p>
+				<p class="day__paragraph">
+					border-width: 3px; (szerokość)
+					border-style: solid; (styl)
+					boredr-color: #...; (kolor)<br>
+					<strong>Można to zapisać:</strong> border: 3px solid #...
+				</p>
+				<p class="day__paragraph">
+					border-radious - zaokrąglenie rogów np. px, %(kwadratowy element + border-radious: 50% = okrągły
+					element)
+				</p>
+				<p class="day__paragraph">
+					margin: 10px auto; - środkowanie treści (margines górny i dolny - 10 px, boczne marginesy
+					wyśrodkowane)
+				</p>
+				<div class="list">
+					<p class="list__title">Jednostki</p>
+					<ul class="list__totality">
+						<li class="list__item list__item--circle">0 - może być bez jednostek</li>
+						<li class="list__item list__item--circle">px - piksele</li>
+						<li class="list__item list__item--circle">% - procenty - brany jest z "rodzica"(np. procent
+							szerokości rodzica)</li>
+						<li class="list__item list__item--circle">vw = viewport width - procent szerokości całego okna
+							(jednosta niezależna od rodzica). Może być
+							stosowane w innych rzeczach np. font-size: 50 vw - czcionka będzie rosła/malała zależnie od
+							szerokośći
+							strony (niepolecane)</li>
+						<li class="list__item list__item--circle">vh = viewport hight</li>
+					</ul>
+				</div>
+			</article>
+			<article class="day">
+				<header>
+				<h3 Class="day__title">
+					Życie w pudełku II
+				</h3>
+				</header>
+				<div class="lorem">
+					<img class="img__box-model-korsan" src="/assets/img/korsan-header.jpg" alt="Korsan" />
+					<p class="day__paragraph">
+						Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor, tenetur quae earum,
+						et
+						optio dolorum saepe laboriosam corporis nisi incidunt eveniet quidem ab quos eos voluptate
+						possimus
+						voluptates. Repellat, totam.
+					</p>
+					<p class="day__paragraph">
+						Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor, tenetur quae earum,
+						et
+						optio dolorum saepe laboriosam corporis nisi incidunt eveniet quidem ab quos eos voluptate
+						possimus
+						voluptates. Repellat, totam.
+					</p>
+					<p class="day__paragraph">
+						Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor, tenetur quae earum,
+						et
+						optio dolorum saepe laboriosam corporis nisi incidunt eveniet quidem ab quos eos voluptate
+						possimus
+						voluptates. Repellat, totam.
+					</p>
+					<p class="day__paragraph">
+						Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor, tenetur quae earum,
+						et
+						optio dolorum saepe laboriosam corporis nisi incidunt eveniet quidem ab quos eos voluptate
+						possimus
+						voluptates. Repellat, totam.
+					</p>
+					<p class="day__paragraph">
+						Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor, tenetur quae earum,
+						et
+						optio dolorum saepe laboriosam corporis nisi incidunt eveniet quidem ab quos eos voluptate
+						possimus
+						voluptates. Repellat, totam.
+					</p>
+					<p class="day__paragraph">
+						Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor, tenetur quae earum,
+						et
+						optio dolorum saepe laboriosam corporis nisi incidunt eveniet quidem ab quos eos voluptate
+						possimus
+						voluptates. Repellat, totam.
+					</p>
+				</div>
+				<p class="day__paragraph">
+					<strong>div</strong> - nie ma znaczenia semantycznego, używamy go dgy chcemy coś
+					"opakować", tylko gdy nie istnieje semantyczny znacznik
+				</p>
+				<p class="day__paragraph">
+					<strong>box-sizing</strong><br>
+					- content box<br>
+					- border box - zachowuje wymiary boxa jaki zdefiniowaliśmy, możemy zmieniać padding i border a
+					zawsze
+					zostanie zachowany wymiar (element się zmniejszy.zwiększy)
+				</p>
+				<p class="day__paragraph">
+					<strong>position:</strong><br>
+					- static - domyślne<br>
+					- relative - "mapa" dla elementów z innymi własnościami (odniesienie)<br>
+					- absolute - przykleje box do sekcji/paragrafu itp. z komendą position: relative (przenosi box nad
+					tekst)<br>
+					- fixed - box podąża za przesuwaniem strony<br>
+					- sticky - zjeżdżając stroną nasz box przyklei się do krawędzi przeglądarki, wracając zostanie na
+					swoim
+					miejscu (nie jest wspierane przez wszystkie przeglądarki - sprawdzenie na stronie ze slajdów)
+				</p>
+				<p class="day__paragraph">
+					<strong>top, right, bottom, left</strong> - pozycjonowanie boxa (mogą być wartości
+					ujemne)
+				</p>
+				<p class="day__paragraph">
+					<strong>z-index</strong> - box z większym z-indexem będzie wyświetlany wyżej
+					(makszymalnie 9999)
+				</p>
+				<p class="day__paragraph">
+					<strong>text-decoration: none</strong> - kasuje podkreślenia w linkach
+				</p>
+				<p class="day__paragraph">
+					<strong>float</strong> - tekst opływa box/obrazek
+				</p>
+				<p class="day__paragraph">
+					<strong>overflow: hidden</strong> - jeżeli obrazek będzie większy niż
+					sekcja/paragraf/itp
+					to następna sekcja zacznie się nieżej (nie będzie opływała obrazka z sekcji wyższej - bez tego może)
+				</p>
+				<p class="day__paragraph">
+					<strong>clear: right/left/both</strong> - ta sama funkcja co overflow: hidden
+				</p>
+				<p class="attention">
+					Float nie służy do budowania layoutów !<br>
+					Zastępują je flexboxy
+				</p>
+				<div class="list">
+					<p class="list__title">Podsumowanie:</p>
+					<ul class="list__totality">
+						<li class="list__item list__item--circle">świat stron internetowych jest 2,5 wymiarowy
+							(warstwy/boxy mogą na siebie nachodzić)</li>
+						<li class="list__item list__item--circle">każdy element jest zamknięty w "pudełku", które ma
+							swoje rozmiary</li>
+						<li class="list__item list__item--circle">CSS posiada różne jednostki (stosujemy wg
+							przeznaczenia, upodobania)</li>
+						<li class="list__item list__item--circle">nie używamy floatów do budowania layoutów</li>
+					</ul>
+				</div>
+			</article>
+			<article class="day">
+				<header>
+				<h3 Class="day__title">
+					BEM = Block Element Modifier
+				</h3>
+				</header>
+				<div class="list">
+					<p class="list__title">Dlaczego powstał BEM</p>
+					<ul class="list__totality">
+						<li class="list__item list__item--circle">świat stylowania doszedł do wsysokiego stopnia
+							skomplikowania (pecyficzność)</li>
+						<li class="list__item list__item--circle">problem z logicznym nazywaniem klas</li>
+						<li class="list__item list__item--circle">brak ujednoliconego sposobu stylowania</li>
+						<li class="list__item list__item--circle">Importanty , nadpisywanie rzeczy</li>
+						<li class="list__item list__item--circle">brak odwzorowania struktury HTML w CSS</li>
+						<li class="list__item list__item--circle">stylowanie kilkoma klasami, powtarzające się nazwy
+						</li>
+					</ul>
+				</div>
+				<h4 Class="day__subtitle">
+					BEM jak na dłoni
+				</h4>
+				<div class="img__position">
+					<img class="img__bem" src="/assets/img/BEM_jak_na_dłoni.JPG" alt="BEM jak na dłoni">
+				</div>
+				<h4 Class="day__subtitle">
+					BEM - przykład z życia
+				</h4>
+				<div class="img__position">
+					<img class="img__bem" src="/assets/img/BEM_przykład.JPG" alt="BEM - przykład z życia">
+				</div>
+				<p class="day__paragraph">
+					<strong>Block</strong>
+					- nadrzędny element (dłoń)
+				</p>
+				<p class="day__paragraph">
+					<strong>Element</strong>
+					- część bloku (nie musi być bezpośrednim dzieckiem, ale
+					zawiera
+					się w dłoni)
+				</p>
+				<p class="day__paragraph">
+					<strong>Modifier</strong> - modyfikator - jeśli element występuje w kilu wariantach
+					tworzymy dodatkową klasę
+				</p>
+				<p class="attention">
+					BEM jest to sposób pisania
+				</p>
+				<p class="attention">
+					block__element--modifier
+				</p>
+				<p class="day__paragraph">
+					W BEM-ie zalecane jes stosowanie małych liter i myślników zamiast spacni (nie
+					camaleCase)
+				</p>
+				<div class="list">
+					<p class="list__title">Podsumowanie:</p>
+					<ul class="list__totality">
+						<li class="list__item list__item--circle">Szukamy elementów na stronie i dzielimy ją na bloki
+						</li>
+						<li class="list__item list__item--circle">Myślimy o elementach składowych. Robimy analizę i
+							selekcję</li>
+						<li class="list__item list__item--circle">Tworzymy dwie klasy jeśli element ma modyfikator (w
+							modyfikatorze zmieniamy tylko unikalne dla
+							niego
+							wartości, nie przepisujemy rzeczy z klasy bazowej)</li>
+					</ul>
+				</div>
+			</article>
+			<article class="day">
+				<header>
+				<h3 class="day__title day__title--js">
+					DOM = Document Object Model
+				</h3>
+				</header>
+				<h4 Class="day__subtitle">
+					DOM = Document Object Model (obiektywny model elementu)
+				</h4>
+				<p class="day__paragraph">
+					Plik HTML nie jest DOM-em
+				</p>
+				<p class="day__paragraph">
+					Źródło strony nie jest DOM-em
+				</p>
+				<p class="day__paragraph">
+					To co widzimy w devtoolsach to jest DOM !
+				</p>
+				<p class="day__paragraph">
+					HTML to "instrukcja" to co znajduje się w devtoolsach (przerobione, złożone przez przegladarkę) to
+					DOM
+				</p>
+				<h4 Class="day__subtitle">
+					JS lubi DOM
+				</h4>
+				<p class="day__paragraph">
+					DOM jest łącznikiem między światem HTML-a i JS
+				</p>
+				<p class="day__paragraph">
+					DOM nie jest HTML-em między innymi dlatego, że JS może modyfikować treść dopiero po wczytaniu strony
+					przez przegladarkę
+				</p>
+				<h4 Class="day__subtitle">
+					document.querySelector('selector')
+				</h4>
+				<p class="day__paragraph">
+					document.querySelector('selector') = $('selector') - zastępuje $ z <strong>jQuery</strong> - nie
+					trzeba instalować jQuery
+				</p>
+				<p class="day__paragraph">
+					const selector = document.querySelector ('selector');<br>
+					consol.log(selector);<br><br>
+					"pobranie" danego selectora do consoli
+				</p>
+				<h4 Class="day__subtitle">
+					document.querySelectorALL('selector')
+				</h4>
+				<p class="day__paragraph">
+					Przywołuje do konsoli wszystkie selektory o danej nazwie, tworzy Node List
+				</p>
+				<p class="day__paragraph">
+					<strong>Node List</strong>- lista elementów zamknięta w czymś co możemy nazwać tablicą
+				</p>
+				<p class="day__paragraph">
+					const selector = document.querySelectorALL('selector');<br>
+					consol.log(selector[n]);<br><br>
+					Przywołuje konkretny selektor [n] z Node List (bez [n] przywoła wszystkie)
+				</p>
+				<h4 Class="day__subtitle">
+					BEM - block__element--js
+				</h4>
+				<p class="day__paragraph">
+					Tworzymy klasę dla JS, nie musi mieć stylowania. Przypisane tylko do JS.
+				</p>
+				<h4 Class="day__subtitle">
+					consol.log (selector.innerHTML)
+				</h4>
+				<p class="day__paragraph">
+					Przywołanie czystej treści w konsoli. Bez całej otoczki (klasy, paragrafy, sekcje)
+				</p>
+				<h4 Class="day__subtitle">
+					nazwaZmiennej querySelector.innerHTML = 'treść'
+				</h4>
+				<p class="day__paragraph">
+					const.selector = documen.querySelector ('selector')<br>
+					selector.innerHTML = 'treść'<br><br>
+					JS zmienia daną treść HTML-a<br>
+					W podmienionej treści można używać koment z HTML-a (np. strong). Można nawet wstawiać całe szablony
+					HTML-owe
+				</p>
+				<div class="list">
+					<p class="list__title">Podsumowanie:</p>
+					<ul class="list__totality">
+						<li class="list__item list__item--circle">DOM to "złożony" w przeglądarce HTML (sam HTML to
+							"instrukcja")</li>
+						<li class="list__item list__item--circle">JS może modyfikować DOM</li>
+						<li class="list__item list__item--circle">Funkcja querySelector zwraca node-a (węzeł) z HTML-a
+							(czyli nasz element). Selektor jest
+							zapisywany zgodnie z CSS</li>
+						<li class="list__item list__item--circle">Korzystając z BEM-a tworzymy dodatkową klasę z
+							modyfikatorem --js (ułatwia to identyfikację /
+							usuwa potencjalne problemy)</li>
+					</ul>
+				</div>
+			</article>
+		</section>
+
+	</main>
+
+	<footer class="footer">
+		<a class="footer__link" href="#up">Wróc do góry</a>
+		<p class="footer__paragraph">Strona domowa Michała Frelika - nauka front endu!</p>
+  </footer>
+
+  <script src="/js/main.js"> </script>
+
+</body>
+
+</html>
