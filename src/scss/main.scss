@@ -26,7 +26,7 @@ html {
 }
 
 .site-header {
-  background-image: url(../assets/img/225.png);
+  backdrop-filter: blur(8px);
   left: 0;
   min-height: 48px;
   position: fixed;
@@ -107,7 +107,7 @@ html {
   margin: 0;
   &__form {
     background-image: url(../assets/img/11698.png);
-    border: 3px solid #00487c;
+    border: 3px solid $darkBlue;
     border-radius: 30px;
     height: 100%;
     margin: 10px auto;
@@ -138,7 +138,7 @@ html {
 .header {
   padding: 10px;
   background-image: url(../assets/img/11698.png);
-  border: 3px solid #00487c;
+  border: 3px solid $darkBlue;
   border-radius: 30px;
   height: 100%;
   margin: 10px auto;
@@ -180,7 +180,7 @@ html {
     width: 100%;
   }
   &__week {
-    border: 3px solid #00487c;
+    border: 3px solid $darkBlue;
     height: 100px;
     margin: 0 auto;
     text-align: center;
@@ -235,7 +235,7 @@ html {
     background: yellow;
     width: 24px;
     height: 24px;
-    border: solid 2px grey;
+    border: solid 2px $grey;
     border-radius: 50%;
     margin-right: 5px;
   }
@@ -245,13 +245,13 @@ html {
     background: rgb(145, 36, 155);
     width: 24px;
     height: 24px;
-    border: solid 2px grey;
+    border: solid 2px $grey;
     border-radius: 50%;
     margin-left: 5px;
   }
   &__title {
     background-image: url(../assets/img/11698.png);
-    border: 3px solid #00487c;
+    border: 3px solid $darkBlue;
     color: whitesmoke;
     font-size: 30px;
     margin: 0 auto;
@@ -297,7 +297,7 @@ html {
   background-image: url(../assets/img/225.png);
   background-position: center center;
   background-size: cover;
-  border: solid grey 3px;
+  border: solid $grey 3px;
   border-radius: 30px;
   margin: 0 auto;
   max-width: 300px;
@@ -323,7 +323,7 @@ html {
 }
 
 .attention {
-  border: 3px grey solid;
+  border: 3px $grey solid;
   color: $red;
   font-size: 20px;
   font-weight: 800;
@@ -341,14 +341,14 @@ html {
 }
 
 .img__korsan-lorem {
-  border: 2px solid #00487c;
+  border: 2px solid $darkBlue;
   border-radius: 50%;
   margin: 0 0 10px 0;
   max-width: 200px;
   overflow: hidden;
   width: 100%;
   &--signature {
-    color: grey;
+    color: $grey;
     display: flex;
     font-size: 12px;
     justify-content: center;
@@ -359,7 +359,7 @@ html {
 .img__korsan-lorem
 
 .img__box-model-korsan {
-  border: 2px solid #00487c;
+  border: 2px solid $darkBlue;
   float: left;
   margin: 15px;
   max-width: 100px;
@@ -378,7 +378,7 @@ html {
 }
 
 .table {
-  border: solid grey 3px;
+  border: solid $grey 3px;
   border-collapse: collapse;
   margin: 10px auto;
   table-layout: auto;
@@ -388,13 +388,13 @@ html {
     border: solid black 1px;
   }
   &__thead {
-    background-color: lightgrey;
+    background-color: light$grey;
   }
 }
 
 .web-link {
   text-decoration: none;
-  color: #00487c;
+  color: $darkBlue;
   &:visited {
     color: darkslateblue;
   }
