@@ -311,7 +311,9 @@ html {
   -webkit-box-sizing: border-box;
           box-sizing: border-box; }
 
-*, *:before, *:after {
+*,
+*:before,
+*:after {
   -webkit-box-sizing: inherit;
           box-sizing: inherit; }
 
@@ -327,7 +329,7 @@ html {
   width: 100%; }
 
 .site-header {
-  background-image: url(/assets/img/225.png);
+  background-image: url(../assets/img/225.png);
   left: 0;
   min-height: 48px;
   position: fixed;
@@ -408,7 +410,7 @@ html {
 .homepage {
   margin: 0; }
   .homepage__form {
-    background-image: url(/assets/img/11698.png);
+    background-image: url(../assets/img/11698.png);
     border: 3px solid #00487c;
     border-radius: 30px;
     height: 100%;
@@ -440,7 +442,7 @@ html {
 
 .header {
   padding: 10px;
-  background-image: url(/assets/img/11698.png);
+  background-image: url(../assets/img/11698.png);
   border: 3px solid #00487c;
   border-radius: 30px;
   height: 100%;
@@ -586,7 +588,7 @@ html {
   width: 100%; }
 
 .http-code {
-  background-image: url(/assets/img/225.png);
+  background-image: url(../assets/img/225.png);
   background-position: center center;
   background-size: cover;
   border: solid grey 3px;
@@ -650,7 +652,9 @@ html {
   max-width: 100px;
   width: 100%; }
 
-.img__bem, .img__box-model, .img__dethStar {
+.img__bem,
+.img__box-model,
+.img__dethStar {
   max-width: 800px;
   width: 100%; }
 
