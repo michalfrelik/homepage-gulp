@@ -550,7 +550,7 @@ html {
     border-radius: 50%;
     margin-left: 5px; }
   .day__title {
-    background-image: url(/assets/img/11698.png);
+    background-image: url(../assets/img/11698.png);
     border: 3px solid #00487c;
     color: whitesmoke;
     font-size: 30px;
@@ -753,12 +753,6 @@ html {
     -ms-grid-column: 5;
     grid-area: menu; }
 
-.grid-week6
-.grid-week6
-.grid-week6
-.grid-week6
-.grid-week6
-.grid-week6
 .json {
   display: -webkit-box;
   display: -ms-flexbox;
