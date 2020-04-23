@@ -1,5 +1,6 @@
-@import "_normalize";
+@import "_brakpoints";
 @import "_mixin";
+@import "_normalize";
 @import "_variables";
 
 html {
@@ -12,18 +13,22 @@ html {
   box-sizing: inherit;
 }
 
-.page {
-  background-color: #fff;
-  height: 100vh;
-}
-
 .main {
   margin: 0 auto;
-  max-width: 800px;
   padding-bottom: 50px;
   padding-top: 50px;
   width: 100%;
+  @media (min-width: $mobileS) and (max-width: $mobileL) {
+      max-width: 320px;
+  };
+  @media (min-width: $laptop) and (max-width: $desktop) {
+        max-width: 900px;
+  };
+  @media (min-width: $desktop) {
+        max-width: 1200px;
+  }
 }
+
 
 .site-header {
   backdrop-filter: blur(8px);
@@ -40,13 +45,13 @@ html {
     margin: 0;
   }
   &__link {
-    color: black;
+    color: $black;
     text-decoration: none;
     &:visited {
-      color: darkslateblue;
+      color: $black;
     }
     &:hover {
-      color: darkred;
+      color: $darkred;
       font-weight: bold;
     }
   }
@@ -58,6 +63,9 @@ html {
     list-style: none;
     padding: 0;
     width: 100%;
+    @media (max-width: $tablet) {
+      display: none;
+    }
     &--grid {
       display: grid;
       grid-template-columns: 1fr 1fr;
@@ -85,6 +93,9 @@ html {
   }
 }
 
+
+
+
 .footer {
   bottom: 10px;
   clear: both;
@@ -95,6 +106,9 @@ html {
     position: fixed;
     right: 10px;
     text-decoration: none;
+    @media (min-width: $mobileS) and (max-width: $tablet) {
+      display: none;
+    }
   }
   &__paragraph {
     font-size: 14px;
@@ -120,7 +134,7 @@ html {
     }
     &--text {
       align-items: center;
-      color: whitesmoke;
+      color: $whitesmoke;
       display: flex;
       font-size: 28px;
       height: 100%;
@@ -145,13 +159,13 @@ html {
   max-width: 680px;
   width: 100%;
   &__title {
-    color: whitesmoke;
+    color: $whitesmoke;
     font-size: 48px;
     margin: 0;
     text-align: center;
     text-transform: uppercase;
     &--red {
-      color: darkred;
+      color: $darkred;
     }
   }
 }
@@ -169,6 +183,10 @@ html {
       height: 100%;
       margin: 0;
     }
+    &:hover {
+      color: $darkred;
+      font-size: 32px;
+    }
   }
   &__list {
     display: grid;
@@ -184,7 +202,7 @@ html {
     height: 100px;
     margin: 0 auto;
     text-align: center;
-    width: 350px;
+    width: 300px;
   }
 }
 
@@ -238,6 +256,9 @@ html {
     border: solid 2px $grey;
     border-radius: 50%;
     margin-right: 5px;
+    @media (max-width: $tablet) {
+      display: none;
+    }
   }
   &__subtitle::after {
     content: "";
@@ -248,11 +269,14 @@ html {
     border: solid 2px $grey;
     border-radius: 50%;
     margin-left: 5px;
+    @media (max-width: $tablet) {
+      display: none;
+    }
   }
   &__title {
     background-image: url(../assets/img/11698.png);
     border: 3px solid $darkBlue;
-    color: whitesmoke;
+    color: $whitesmoke;
     font-size: 30px;
     margin: 0 auto;
     padding: 5px 0 5px 20px;
@@ -272,6 +296,9 @@ html {
     &--circle {
       list-style: circle outside;
     }
+    @media (max-width: $tablet) {
+      margin: 0 0 0 20px;
+    }
   }
   &__title {
     font-size: 20px;
@@ -283,14 +310,6 @@ html {
     margin: 0;
     padding: 0;
   }
-}
-
-.lorem {
-  margin: 15px auto;
-  max-width: 80vw;
-  max-height: 400px;
-  overflow: scroll;
-  width: 100%;
 }
 
 .http-code {
@@ -340,6 +359,30 @@ html {
   width: 160px;
 }
 
+.lorem {
+  margin: 15px auto;
+  max-width: 80vw;
+  max-height: 400px;
+  overflow: scroll;
+  width: 100%;
+}
+
+.img__box-model-korsan {
+  border: 2px solid #00487c;
+  float: left;
+  margin: 15px;
+  max-width: 100px;
+  width: 100%;
+}
+
+.img__box-model-korsan {
+  border: 2px solid $darkBlue;
+  float: left;
+  margin: 15px;
+  max-width: 100px;
+  width: 100%;
+}
+
 .img__korsan-lorem {
   border: 2px solid $darkBlue;
   border-radius: 50%;
@@ -354,16 +397,6 @@ html {
     justify-content: center;
     margin: 0;
   }
-}
-
-.img__korsan-lorem
-
-.img__box-model-korsan {
-  border: 2px solid $darkBlue;
-  float: left;
-  margin: 15px;
-  max-width: 100px;
-  width: 100%;
 }
 
 .img__bem,
@@ -396,10 +429,10 @@ html {
   text-decoration: none;
   color: $darkBlue;
   &:visited {
-    color: darkslateblue;
+    color: $darkBlue;
   }
   &:hover {
-    color: darkred;
+    color: $darkred;
     font-weight: bold;
   }
 }
@@ -444,7 +477,7 @@ html {
   }
   &__link {
     text-decoration: none;
-    color: darkred;
+    color: $darkred;
     line-height: 32px;
   }
   &__list {
@@ -493,17 +526,9 @@ html {
   }
 }
 
-@media (min-width: 900px) {
-  .main {
-    max-width: 900px;
-  }
-}
 
 @media (max-width: 750px) {
   .homepage__list {
     grid-template-columns: 1fr;
-  }
-  .navigation__list {
-    display: none;
   }
 }
