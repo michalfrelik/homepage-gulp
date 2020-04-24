@@ -11,58 +11,59 @@
 <body id="up">
 	<header class="site-header">
 		<nav class="navigation">
-				<button class="navigation__switcher navigation__switcher--js" aria-label="Otwórz menu">menu</button>
-				<div class="navigation__list--weeks navigation__list--js">
-					<ul class="navigation__list--grid">
-						<li class="navigation__item">
-							<a class="navigation__link" href="weekI.html">Tydzień I</a>
-						</li>
-						<li class="navigation__item">
-							<a class="navigation__link" href="weekII.html">Tydzień II</a>
-						</li>
-						<li class="navigation__item">
-							<a class="navigation__link" href="weekIII.html">Tydzień III</a>
-						</li>
-						<li class="navigation__item">
-							<a class="navigation__link" href="weekIV.html">Tydzień IV</a>
-						</li>
-						<li class="navigation__item">
-							<a class="navigation__link" href="weekV.html">Tydzień V</a>
-						</li>
-						<li class="navigation__item">
-							<a class="navigation__link" href="weekVI.html">Tydzień VI</a>
-						</li>
-						<li class="navigation__item">
-							<a class="navigation__link" href="weekVII.html">Tydzień VII</a>
-						</li>
-						<li class="navigation__item">
-							<a class="navigation__link" href="weekVIII.html">Tydzień VIII</a>
-						</li>
-						<li class="navigation__item">
-							<a class="navigation__link" href="weekIX.html">Tydzień IX</a>
-						</li>
-						<li class="navigation__item">
-							<a class="navigation__link" href="weekX.html">Tydzień X</a>
-						</li>
-						<li class="navigation__item">
-							<a class="navigation__link" href="weekXI.html">Tydzień XI</a>
-						</li>
-						<li class="navigation__item">
-							<a class="navigation__link" href="weekXII.html">Tydzień XII</a>
-						</li>
-					</ul>
-				</div>
-				<ul class="navigation__list">
+			<button class="navigation__switcher navigation__switcher--js" aria-label="Otwórz menu">menu</button>
+			<div class="navigation__list--weeks navigation__list--js">
+				<ul class="navigation__list--grid">
+					<li class="navigation__item">
+							<a class=" navigation__link" href="weekI.html">Tydzień I</a>
+					</li>
+					<li class="navigation__item">
+						<a class="navigation__link" href="weekII.html">Tydzień II</a>
+					</li>
+					<li class="navigation__item">
+						<a class="navigation__link" href="weekIII.html">Tydzień III</a>
+					</li>
+					<li class="navigation__item">
+						<a class="navigation__link" href="weekIV.html">Tydzień IV</a>
+					</li>
+					<li class="navigation__item">
+						<a class="navigation__link" href="weekV.html">Tydzień V</a>
+					</li>
+					<li class="navigation__item">
+						<a class="navigation__link" href="weekVI.html">Tydzień VI</a>
+					</li>
+					<li class="navigation__item">
+						<a class="navigation__link" href="weekVII.html">Tydzień VII</a>
+					</li>
+					<li class="navigation__item">
+						<a class="navigation__link" href="weekVIII.html">Tydzień VIII</a>
+					</li>
+					<li class="navigation__item">
+						<a class="navigation__link" href="weekIX.html">Tydzień IX</a>
+					</li>
+					<li class="navigation__item">
+						<a class="navigation__link" href="weekX.html">Tydzień X</a>
+					</li>
+					<li class="navigation__item">
+						<a class="navigation__link" href="weekXI.html">Tydzień XI</a>
+					</li>
+					<li class="navigation__item">
+						<a class="navigation__link" href="weekXII.html">Tydzień XII</a>
+					</li>
 					<li class="navigation__item">
 						<a class="navigation__link" href="index.html">Strona główna</a>
 					</li>
-					<li class="navigation__item">
-						<a class="navigation__link" href="weekIII.html">Poprzedni tydzień</a>
-					</li>
-					<li class="navigation__item">
-						<a class="navigation__link" href="weekV.html">Następny tydzień</a>
-					</li>
 				</ul>
+			</div>
+
+			<ul class="navigation__list">
+				<li class="navigation__item">
+					<a class="navigation__link" href="weekIII.html">Strona główna</a>
+				</li>
+				<li class="navigation__item">
+					<a class="navigation__link" href="weekV.html">Następny tydzień</a>
+				</li>
+			</ul>
 		</nav>
 	</header>
 
@@ -480,7 +481,7 @@
 					przez przegladarkę
 				</p>
 				<h4 Class="day__subtitle">
-					document.querySelector('selector')
+					document.querySelector ('selector')
 				</h4>
 				<p class="day__paragraph">
 					document.querySelector('selector') = $('selector') - zastępuje $ z <strong>jQuery</strong> - nie
@@ -492,7 +493,7 @@
 					"pobranie" danego selectora do consoli
 				</p>
 				<h4 Class="day__subtitle">
-					document.querySelectorALL('selector')
+					document.querySelectorALL ('selector')
 				</h4>
 				<p class="day__paragraph">
 					Przywołuje do konsoli wszystkie selektory o danej nazwie, tworzy Node List
@@ -501,7 +502,7 @@
 					<strong>Node List</strong>- lista elementów zamknięta w czymś co możemy nazwać tablicą
 				</p>
 				<p class="day__paragraph">
-					const selector = document.querySelectorALL('selector');<br>
+					const selector = document.querySelectorALL ('selector');<br>
 					consol.log(selector[n]);<br><br>
 					Przywołuje konkretny selektor [n] z Node List (bez [n] przywoła wszystkie)
 				</p>
@@ -547,7 +548,7 @@
 	</main>
 
 	<footer class="footer">
-		<a class="footer__link" href="#up">Wróc do góry</a>
+		<a class="navigation__item navigation__link navigation__link--footer" href="#up">Wróc do góry</a>
 		<p class="footer__paragraph">Strona domowa Michała Frelika - nauka front endu!</p>
   </footer>
 
