@@ -2,10 +2,10 @@
 <html lang="pl">
 
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Document</title>
-	<link href="css/main.css" rel="stylesheet" type="text/css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href="css/main.css" rel="stylesheet" type="text/css">
 </head>
 
 <body id="up">
@@ -15,7 +15,7 @@
       <div class="navigation__list--weeks navigation__list--js">
         <ul class="navigation__list--grid">
           <li class="navigation__item">
-            <a class="navigation__link" href="weekI.html">Tydzień I</a>
+            <a class=" navigation__link" href="weekI.html">Tydzień I</a>
           </li>
           <li class="navigation__item">
             <a class="navigation__link" href="weekII.html">Tydzień II</a>
@@ -50,17 +50,18 @@
           <li class="navigation__item">
             <a class="navigation__link" href="weekXII.html">Tydzień XII</a>
           </li>
+          <li class="navigation__item">
+            <a class="navigation__link" href="index.html">Strona główna</a>
+          </li>
         </ul>
       </div>
+
       <ul class="navigation__list">
         <li class="navigation__item">
-          <a class="navigation__link" href="index.html">Strona główna</a>
+          <a class="navigation__link" href="weekVI.html">Strona główna</a>
         </li>
         <li class="navigation__item">
-          <a class="navigation__link" href="weekVI.html">Poprzedni tydzień</a>
-        </li>
-        <li class="navigation__item">
-          <a class="navigation__link" href="weekVIII.html">Następny tydzień</a>
+          <a class="navigation__link" href="weekI.html">Następny tydzień</a>
         </li>
       </ul>
     </nav>
@@ -68,7 +69,7 @@
 
   <main class="main">
     <section class="section">
-      <header class="article__header">
+      <header class="section__header">
         <h2 class="section__title">
           Tydzień VII
         </h2>
@@ -535,27 +536,31 @@
           <p class="list__title">
             Kolejność działania
           </p>
-            <ol class="list__totality">
-              <li class="list__item">Z poziomu terminala pobieramy starter kit-a - <strong>git clone <a class="web-link" href="https://github.com/maciejkorsan/wtf-gulp-starter">link do repozytorium Korsana</a></strong></li>
-                <ul>
-                  <li class="list__item">tworzy nam folder <strong>wtf-gulp-starter</strong></li>
-                </ul>
-              <li class="list__item">Tworzenie nowego projektu</li>
-                <ul>
-                  <li class="list__item">nowy folder np. homepage-gulp</li>
-                  <li class="list__item">kopiujemy zawartość z wtf-gulp-starter do nowego projektu</li>
-                </ul>
-              <li class="list__item">Tworzymy nowe repozytorium z terminala lub git huba</li>
-                <ul>
-                  <li class="list__item">kopiujemy komenty do gita z git huba, wypisane są podczas tworzenia repozytorium - komendy uruchamiające wszystko np. git init, git add README</li>
-                  <li class="list__item">wklejamy powyższe komendy do terminala w naszym projekcie</li>
-                  <li class="list__item">git commit -m "initial commit"</li>
-                </ul>
-              <li class="list__item">Instalacja gulp-a globalnie (raz na system, jako administrator) - <strong>npm install -g gulp-cli</strong></li>
-              <li class="list__item"><strong>npm install</strong> - instalacja, do projektu, paczek ze startera</li>
-              <li class="list__item">komenda <strong>gulp</strong> - uruchamia projekt (za każdym razem gdy zaczynamy pracę) - odpala serwer lokalny</li>
-              <li class="list__item"><strong>npm run deploy</strong> - publikacja na gh-pages</li>
-            </ol>
+          <ol class="list__totality">
+            <li class="list__item">Z poziomu terminala pobieramy starter kit-a - <strong>git clone <a class="web-link"
+                  href="https://github.com/maciejkorsan/wtf-gulp-starter">link do repozytorium Korsana</a></strong></li>
+            <ul>
+              <li class="list__item">tworzy nam folder <strong>wtf-gulp-starter</strong></li>
+            </ul>
+            <li class="list__item">Tworzenie nowego projektu</li>
+            <ul>
+              <li class="list__item">nowy folder np. homepage-gulp</li>
+              <li class="list__item">kopiujemy zawartość z wtf-gulp-starter do nowego projektu</li>
+            </ul>
+            <li class="list__item">Tworzymy nowe repozytorium z terminala lub git huba</li>
+            <ul>
+              <li class="list__item">kopiujemy komenty do gita z git huba, wypisane są podczas tworzenia repozytorium -
+                komendy uruchamiające wszystko np. git init, git add README</li>
+              <li class="list__item">wklejamy powyższe komendy do terminala w naszym projekcie</li>
+              <li class="list__item">git commit -m "initial commit"</li>
+            </ul>
+            <li class="list__item">Instalacja gulp-a globalnie (raz na system, jako administrator) - <strong>npm install
+                -g gulp-cli</strong></li>
+            <li class="list__item"><strong>npm install</strong> - instalacja, do projektu, paczek ze startera</li>
+            <li class="list__item">komenda <strong>gulp</strong> - uruchamia projekt (za każdym razem gdy zaczynamy
+              pracę) - odpala serwer lokalny</li>
+            <li class="list__item"><strong>npm run deploy</strong> - publikacja na gh-pages</li>
+          </ol>
         </article>
       </article>
     </section>
@@ -563,7 +568,7 @@
   </main>
 
   <footer class="footer">
-    <a class="footer__link" href="#up">Wróc do góry</a>
+    <a class="navigation__item navigation__link navigation__link--footer" href="#up">Wróc do góry</a>
     <p class="footer__paragraph">Strona domowa Michała Frelika - nauka front endu!</p>
   </footer>
 
