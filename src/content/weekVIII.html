@@ -83,6 +83,61 @@
             CSS: Prefixy
           </h3>
         </header>
+        <p class="day__paragraph">
+          Przeglądarki implementują różne feature-y w różnym czasie (i często każda po swojemu)
+        </p>
+        <p class="day__paragraph">
+          Prefixy pochodzą z historii przeglądarek. kiedyś trzeba było dopisywać prefix przy własności osobno dla każdej przeglądarki (starsze wersje dalej potrzebują) np. flexbox<br>
+          <ul class="list__totality">
+            <li class="list__item">display: <strong>-webkit</strong>-box (google chrome, safari)</li>
+            <li class="list__item">display: <strong>-moz-</strong>box (firefox mozilla)</li>
+            <li class="list__item">display: <strong>-ms-</strong>box (microsoft - internet explorer, edge)</li>
+          </ul>
+        </p>
+        <p class="day__paragraph">
+          Sprawdzenie do jakiej własności trzeba dopisywać prefixy i jakie dla jakich przeglądarek na stronie - <a class="web-link" href="https://caniuse.com/#search=flex">CanIUse</a>
+        </p>
+        <p class="attention">
+          Autoprefixer<br>
+          sam dopisuje prefixy, gdzie są wymagane
+        </p>
+        <p class="day__paragraph">
+          <a class="web-link" href="https://autoprefixer.github.io/">Autoprefixer</a> - strona pokazująca jak działa, nakładka zainstalowana w startert kit
+        </p>
+      </article>
+      <article class="day">
+        <header>
+          <h3 Class="day__title">
+            Google fonts
+          </h3>
+        </header>
+        <p class="day__paragraph">
+          <a class="web-link" href="https://fonts.google.com/">Google fonts</a> - serwis który pozwala nam na dołączenie zewnętrzych fontów do naszego projektu
+        </p>
+        <p class="attention">
+          zażółć gęślą jaźń
+        </p>
+        <p class="day__paragraph day__paragraph--center">
+          te 3 słowa zawierają wszystkie polskie znaki diakrytyczne
+        </p>
+        <p class="day__paragraph">
+          Latin Extended - trzeba zaznaczyc, żeby zaimportować polskie znaki
+        </p>
+        <p class="day__paragraph">
+          2 sposoby importu:
+          <ol class="list__totality">
+            <li class="list__item">Kopia arkusza stylów (link generowany podczas wyboru fontów) - wrzucamy w head, tam gdzie nasze style</li>
+            <li class="list__item">@import (polecane) - kopiujemy link @import (link generowany podczas wyboru fontów) i wklejamy przy naszych @importach</li>
+          </ol>
+        </p>
+        <p class="day__paragraph">
+          <strong>font-family: 'nazwa fontu'</strong> (podajemy w apostrofach, bo mogą zawierać spację)
+        </p>
+        <p class="day__paragraph">
+          Pliki z fontami mogą "ważyć", dlatego nie nadużywamy tego - może wpływać na czas ładowania strony<br>
+          z drugiej strony fonty google mogą być zapisywane w pamięci podręcznej przeglądarki co powoduje szybsze ładowanie stron kolejnym razem<br>
+          Warto ograniczyć się do 2 rodzje fontów, lepiej działa i ładniej wygląda (unikamy tzw. choinki)
+        </p>
       </article>
     </section>
 
