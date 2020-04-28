@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href="css/main.css" rel="stylesheet" type="text/css">
+</head>
+
+<body id="up">
+  <header class="site-header">
+    <nav class="navigation">
+      <button class="navigation__switcher navigation__switcher--js" aria-label="Otwórz menu">menu</button>
+      <div class="navigation__list--weeks navigation__list--js">
+        <ul class="navigation__list--grid">
+          <li class="navigation__item">
+            <a class=" navigation__link" href="weekI.html">Tydzień I</a>
+          </li>
+          <li class="navigation__item">
+            <a class="navigation__link" href="weekII.html">Tydzień II</a>
+          </li>
+          <li class="navigation__item">
+            <a class="navigation__link" href="weekIII.html">Tydzień III</a>
+          </li>
+          <li class="navigation__item">
+            <a class="navigation__link" href="weekIV.html">Tydzień IV</a>
+          </li>
+          <li class="navigation__item">
+            <a class="navigation__link" href="weekV.html">Tydzień V</a>
+          </li>
+          <li class="navigation__item">
+            <a class="navigation__link" href="weekVI.html">Tydzień VI</a>
+          </li>
+          <li class="navigation__item">
+            <a class="navigation__link" href="weekVII.html">Tydzień VII</a>
+          </li>
+          <li class="navigation__item">
+            <a class="navigation__link" href="weekVIII.html">Tydzień VIII</a>
+          </li>
+          <li class="navigation__item">
+            <a class="navigation__link" href="weekIX.html">Tydzień IX</a>
+          </li>
+          <li class="navigation__item">
+            <a class="navigation__link" href="weekX.html">Tydzień X</a>
+          </li>
+          <li class="navigation__item">
+            <a class="navigation__link" href="weekXI.html">Tydzień XI</a>
+          </li>
+          <li class="navigation__item">
+            <a class="navigation__link" href="weekXII.html">Tydzień XII</a>
+          </li>
+          <li class="navigation__item">
+            <a class="navigation__link" href="index.html">Strona główna</a>
+          </li>
+        </ul>
+      </div>
+
+      <ul class="navigation__list">
+				<li class="navigation__item">
+					<a class="navigation__link" href="weekVII.html">Poprzedni tydzień</a>
+				</li>
+				<li class="navigation__item">
+					<a class="navigation__link" href="index.html">Strona główna</a>
+				</li>
+        <li class="navigation__item">
+          <a class="navigation__link" href="weekI.html">Następny tydzień</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="main">
+    <section class="section">
+      <header class="section__header">
+        <h2 class="section__title">
+          Tydzień VIII
+        </h2>
+      </header>
+      <article class="day">
+        <header>
+          <h3 Class="day__title">
+            CSS: Prefixy
+          </h3>
+        </header>
+        <p class="day__paragraph">
+          Przeglądarki implementują różne feature-y w różnym czasie (i często każda po swojemu)
+        </p>
+        <p class="day__paragraph">
+          Prefixy pochodzą z historii przeglądarek. kiedyś trzeba było dopisywać prefix przy własności osobno dla każdej przeglądarki (starsze wersje dalej potrzebują) np. flexbox<br>
+          <ul class="list__totality">
+            <li class="list__item">display: <strong>-webkit</strong>-box (google chrome, safari)</li>
+            <li class="list__item">display: <strong>-moz-</strong>box (firefox mozilla)</li>
+            <li class="list__item">display: <strong>-ms-</strong>box (microsoft - internet explorer, edge)</li>
+          </ul>
+        </p>
+        <p class="day__paragraph">
+          Sprawdzenie do jakiej własności trzeba dopisywać prefixy i jakie dla jakich przeglądarek na stronie - <a class="web-link" href="https://caniuse.com/#search=flex">CanIUse</a>
+        </p>
+        <p class="attention">
+          Autoprefixer<br>
+          sam dopisuje prefixy, gdzie są wymagane
+        </p>
+        <p class="day__paragraph">
+          <a class="web-link" href="https://autoprefixer.github.io/">Autoprefixer</a> - strona pokazująca jak działa, nakładka zainstalowana w startert kit
+        </p>
+      </article>
+      <article class="day">
+        <header>
+          <h3 Class="day__title">
+            Google fonts
+          </h3>
+        </header>
+        <p class="day__paragraph">
+          <a class="web-link" href="https://fonts.google.com/">Google fonts</a> - serwis który pozwala nam na dołączenie zewnętrzych fontów do naszego projektu
+        </p>
+        <p class="attention">
+          zażółć gęślą jaźń
+        </p>
+        <p class="day__paragraph day__paragraph--center">
+          te 3 słowa zawierają wszystkie polskie znaki diakrytyczne
+        </p>
+        <p class="day__paragraph">
+          Latin Extended - trzeba zaznaczyc, żeby zaimportować polskie znaki
+        </p>
+        <p class="day__paragraph">
+          2 sposoby importu:
+          <ol class="list__totality">
+            <li class="list__item">Kopia arkusza stylów (link generowany podczas wyboru fontów) - wrzucamy w head, tam gdzie nasze style</li>
+            <li class="list__item">@import (polecane) - kopiujemy link @import (link generowany podczas wyboru fontów) i wklejamy przy naszych @importach</li>
+          </ol>
+        </p>
+        <p class="day__paragraph">
+          <strong>font-family: 'nazwa fontu'</strong> (podajemy w apostrofach, bo mogą zawierać spację)
+        </p>
+        <p class="day__paragraph">
+          Pliki z fontami mogą "ważyć", dlatego nie nadużywamy tego - może wpływać na czas ładowania strony<br>
+          z drugiej strony fonty google mogą być zapisywane w pamięci podręcznej przeglądarki co powoduje szybsze ładowanie stron kolejnym razem<br>
+          Warto ograniczyć się do 2 rodzje fontów, lepiej działa i ładniej wygląda (unikamy tzw. choinki)
+        </p>
+      </article>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <a class="navigation__item navigation__link navigation__link--footer" href="#up">Wróc do góry</a>
+    <p class="footer__paragraph">Strona domowa Michała Frelika - nauka front endu!</p>
+  </footer>
+
+  <script src="/js/main.js"> </script>
+
+</body>
+
+</html>

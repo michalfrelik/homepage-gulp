@@ -5,6 +5,7 @@
  * 1. Correct the line height in all browsers.
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;900&display=swap");
 html {
   line-height: 1.15;
   /* 1 */
@@ -318,6 +319,7 @@ html {
           box-sizing: inherit; }
 
 .main {
+  font-family: 'Lato', sans-serif;
   margin: 0 auto;
   padding-bottom: 50px;
   padding-top: 50px;
@@ -345,6 +347,7 @@ html {
       display: none; } }
 
 .navigation {
+  font-family: 'Lato', sans-serif;
   margin: 0; }
   .navigation__item {
     display: -webkit-box;
@@ -426,6 +429,7 @@ html {
 .footer {
   bottom: 10px;
   clear: both;
+  font-family: 'Lato', sans-serif;
   left: 10px; }
   .footer__paragraph {
     font-size: 14px;
@@ -436,6 +440,7 @@ html {
   margin: 0; }
   .homepage__link {
     color: black;
+    font-family: 'Bangers', cursive;
     font-size: 30px;
     text-decoration: none; }
     .homepage__link--position {
@@ -475,6 +480,7 @@ html {
     background-image: url(../assets/img/11698.png);
     border: 3px solid #00487c;
     border-radius: 30px;
+    font-family: 'Bangers', cursive;
     height: 100%;
     margin: 10px auto;
     max-width: 420px;
@@ -523,6 +529,7 @@ html {
   .header__title {
     color: whitesmoke;
     font-size: 48px;
+    font-family: 'Bangers', cursive;
     margin: 0;
     text-align: center;
     text-transform: uppercase; }
@@ -544,7 +551,7 @@ html {
     line-height: 25px;
     margin: 0;
     text-align: center;
-    text-transform: uppercase; }
+    font-family: 'Bangers', cursive; }
 
 .day {
   margin-bottom: 15px; }
@@ -608,6 +615,7 @@ html {
     border: 3px solid #00487c;
     color: whitesmoke;
     font-size: 30px;
+    font-family: 'Bangers', cursive;
     margin: 0 auto 20px;
     text-align: center;
     text-transform: uppercase;
@@ -641,7 +649,7 @@ html {
   background-size: cover;
   border: solid grey 3px;
   border-radius: 30px;
-  margin: 0 auto;
+  margin: 10px auto;
   max-width: 300px;
   width: 100%; }
   .http-code__text {
