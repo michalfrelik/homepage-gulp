@@ -477,8 +477,7 @@ html {
         -ms-grid-columns: 1fr 1fr 1fr;
         grid-template-columns: 1fr 1fr 1fr; } }
   .homepage__form {
-    background-image: url(../assets/img/11698.png);
-    border: 3px solid #00487c;
+    border: 3px solid darkred;
     border-radius: 30px;
     font-family: 'Bangers', cursive;
     height: 100%;
@@ -493,7 +492,7 @@ html {
       -webkit-box-align: center;
           -ms-flex-align: center;
               align-items: center;
-      color: whitesmoke;
+      color: black;
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
@@ -508,7 +507,7 @@ html {
     .homepage__form:hover {
       background: black; }
   .homepage__week {
-    border: 3px solid #00487c;
+    border: 3px solid darkred;
     height: 100px;
     margin: 0 auto;
     text-align: center;
@@ -516,8 +515,7 @@ html {
 
 .header {
   padding: 10px;
-  background-image: url(../assets/img/11698.png);
-  border: 3px solid #00487c;
+  border: 3px solid darkred;
   border-radius: 30px;
   height: 100%;
   margin: 0px auto 20px;
@@ -527,7 +525,7 @@ html {
     .header {
       margin: 10px auto; } }
   .header__title {
-    color: whitesmoke;
+    color: black;
     font-size: 48px;
     font-family: 'Bangers', cursive;
     margin: 0;
@@ -611,9 +609,8 @@ html {
       .day__subtitle::after {
         display: none; } }
   .day__title {
-    background-image: url(../assets/img/11698.png);
-    border: 3px solid #00487c;
-    color: whitesmoke;
+    border: 3px solid darkred;
+    color: black;
     font-size: 30px;
     font-family: 'Bangers', cursive;
     margin: 0 auto 20px;
