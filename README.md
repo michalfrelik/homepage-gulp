@@ -1,4 +1,12 @@
-# wtf-gulp-starter
+![Homepage screenshot](github/index_screenshot.JPG)
+
+# Mój Homepage
+
+Zapraszam na moją stronę [Strona domowa](https://michalfrelik.github.io/homepage-gulp/)
+
+## Jak uruchomić stronę lokalnie
+
+Aby uruchomić strobę lokalnie wykonaj poniższe polecenia:
 
 `npm install -g gulp-cli`
 
