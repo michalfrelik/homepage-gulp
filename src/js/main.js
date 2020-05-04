@@ -32,45 +32,53 @@
 // welcome('Michał Ferlik', 26);
 
 
-// const navigationSwitcher = document.querySelector('.navigation__switcher--js');
+const navigationSwitcher = document.querySelector('.navigation__switcher--js');
 
-// navigationSwitcher.addEventListener('click', (e) => {
-// 	const navigationList = document.querySelector('.navigation__list--js');
-// 	navigationList.classList.toggle('navigation__list--visible');
-// 	navigationSwitcher.innerHTML = 'X';
-// });
-
-
-const faces = [':D', 'xD', ':O', 'text'];
-
-for (let i = 0; i < faces.length; i++) {
-  console.log(`i: ${i}`);
-  console.log(`element ${i+1}: ${faces[i]}`);
-}
-
-for (let face of faces){
-  console.log(face)
-}
+navigationSwitcher.addEventListener('click', (e) => {
+	const navigationList = document.querySelector('.navigation__list--js');
+	navigationList.classList.toggle('navigation__list--visible');
+	navigationSwitcher.innerHTML = 'X';
+});
 
 
-let a = 3;
+// const faces = [':D', 'xD', ':O', 'text'];
 
-while (a < 9){
-  console.log(a);
-  a=a+3;
-}
+// for (let i = 0; i < faces.length; i++) {
+//   console.log(`i: ${i}`);
+//   console.log(`element ${i+1}: ${faces[i]}`);
+// }
 
-console.log (a)
-
-
-const person = {
-  name: 'maciek',
-  age: 31
-}
-
-for (let property in person) {
-  console.log(`${property}: ${person[property]}`)
-}
+// for (let face of faces){
+//   console.log(face)
+// }
 
 
+// let a = 3;
 
+// while (a < 9){
+//   console.log(a);
+//   a=a+3;
+// }
+
+// console.log (a)
+
+
+// const person = {
+//   name: 'maciek',
+//   age: 31
+// };
+
+// for (let property in person) {
+//   console.log(`${property}: ${person[property]}`)
+// }
+
+
+const inputTest = document.querySelector('.form__window-js');
+
+inputTest.addEventListener('keyup', (e) => {
+  localStorage.setItem('inputTest',e.target.value);
+});
+
+if (localStorage.getItem('inputTest')) {
+  inputTest.value = (localStorage.getItem('inputTest'))
+};
