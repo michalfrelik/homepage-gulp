@@ -262,8 +262,10 @@
         <p class="attention">
           Tablica [array] != tabela (table)
         </p>
+        <h4 class="day__subtitle">
+          Jak wygląda tablica?
+        </h4>
         <p class="day__paragraph">
-          Jak wygląda tablica?<br>
           na rysunku: tablica stringów i tablica obiektów
           <div class="img__position">
             <img class="img" src="../assets/img/js_array.JPG" alt="Przykład tablicy">
@@ -332,10 +334,166 @@
       <article class="day">
         <header>
           <h3 Class="day__title">
+            JS: Pętle
+          </h3>
+        </header>
+        <h4 class="day__subtitle">
+          Po co nam pętle (loops)?
+        </h4>
+        <p class="day__paragraph">
+          Powstały, żeby uprościć kod i nie duplikować zbędnych rzeczy. Wykorzystywane, gdy mamy w kodzie powtarzające
+          sie rzeczy.
+        </p>
+        <p class="day__paragraph">
+          <strong>FOR</strong><br>
+          for (inicjalizacja; warunek; wyrażenie inkrementacji){ kod }
+        </p>
+        <p class="day__paragraph">
+          <strong>i</strong> - licznik pętli, wskazuje nam ile racy coś się wykonało (używamy kolejnych liter alfabrtu
+          i,j,k,..)
+        </p>
+        <p class="day__paragraph">
+          Jak wygląda pętla for?<br>
+          for (let i=0; i"<"3; i++){ <br>
+            conosle.log(`${i}wykonanie pętli`)}
+        </p>
+        <p class="day__paragraph">
+          <strong>Postinkremantacja i++</strong> - dodaje wartość po wykonaniu kodu
+        </p>
+        <p class="day__paragraph">
+          <strong>Postdekrementacja i--</strong> - odejmuje wartość po wykonaniu kodu
+        </p>
+        <p class="day__paragraph">
+          <strong>Preinkremantacja ++i</strong> - dodaje wartość przed wykonaniem kodu
+        </p>
+        <p class="day__paragraph">
+          <strong>Predekrementacja --i</strong> - odejmuje wartość przed wykonaniem kodu
+        </p>
+        <p class="day__paragraph">
+          Pętli możemy użyć do wypisywania elementów<br>
+          const elements=['a', 'b', 'c'];<br>
+          for(let i=0; i '<' elements.length; i++){<br>
+            console.log(`na miejscu ${i} jest ${elements[i]}`}
+        </p>
+        <p class="day__paragraph">
+          <strong>WHILE</strong><br>
+          while (warunek logiczny){ kod } - trzeba uważać, żeby nie zawiesić komputera, może się tak stać jak zrobimy
+          pętlę nieskończoną
+        </p>
+        <p class="day__paragraph">
+          Jak wygląda pętla whlie?<br>
+          let n=9;<br>
+          do {<br>
+          console.log(n);<br>
+          n = n + 3;<br>
+          } while (n'<'9);<br>
+            console.log(n)
+        </p>
+        <p class="day__paragraph">
+          <strong>DO WHILE</strong><br>
+          do { kod } while (warunek logiczny) - pierw wykonuje kod, potem sprawdza warunek logiczny, zawsze się wykona
+        </p>
+        <p class="day__paragraph">
+          Jak wygląda pętla do ... whlie?<br>
+          let n=3;<br>
+          while (n'<'9){<br>
+            console.log(n);<br>
+            n = n + 3}<br>
+            console.log(n)
+        </p>
+        <p class="day__paragraph">
+          <strong>FOR IN</strong><br>
+          <em>for</em> (własność <em>in</em> obiekt) - używamy do obiektów, głównie do wypisywania obiektu
+        </p>
+        <p class="day__paragraph">
+          Jak wygląda pętla for ... in?<br>
+          const person = {<br>
+          name: 'maciek'<br>
+          age: 31<br>
+          }<br>
+          for (let propertyName in person){<br>
+          console.log(`${propertyName}: ${person[propertyName]}`)<br>
+          }
+        </p>
+        <p class="day__paragraph">
+          <strong>FOR OF</strong><br>
+          <em>for</em> (element <em>of</em> tablica) - wypisywanie elementów z tablic bez tworzenia pętli
+        </p>
+        <p class="day__paragraph">
+          Jak wygląda pętla for ... of?<br>
+          const elements = ['a', 'b', 'c'];<br>
+          for (let element of elements){<br>
+          console.log(element);<br>
+          }<br>
+        </p>
+      </article>
+      <article class="day">
+        <header>
+          <h3 Class="day__title">
             JS: Przechowywanie danych
           </h3>
         </header>
-        <input class="form__window form__window-js">
+        <p class="day__paragraph">
+          <strong>COOKIES</strong> - "twór" wykorzystywany do komunikacji między serwerem a klientem, używane między
+          innymi do śledzenia użytkowników, zapisywania prostych rzeczy
+        </p>
+        <p class="day__paragraph">
+          <strong>document.cookie</strong> - pobieranie ciastka
+        </p>
+        <p class="day__paragraph">
+          <strong>document.cookie = "nazwa = wartość"</strong> - dodaje ciastka ciastka - <a class="web-link"
+            href="https://developer.mozilla.org/en-US/docs/Web/API/Document/cookie">COOKIE</a>
+        </p>
+        <p class="day__paragraph">
+          <strong>Web storage</strong> dzieli się na <strong>local i session storage</strong>
+        </p>
+        <p class="day__paragraph">
+          <strong>localtorage</strong> - do ręcznego wyczyszczenia (trwalsze); dane istnieją tak długo, aż użytkownik je
+          wyczyści
+        </p>
+        <p class="day__paragraph">
+          <strong>sessiontorage</strong> - do zamknięcia sesji (zakładki przeglądarki); dane istnieją do momentu
+          zamknięcia sesji, odświerzenie strony
+        </p>
+        <p class="day__paragraph">
+          <strong>localStorage.setItem('nazwa', wartość)</strong> - działa podobnie jak obiekt js - dodaje element do
+          local storage
+        </p>
+        <p class="day__paragraph">
+          <strong>const.jsonPerson = JSON.stringify(nazwa)</strong> - przetwarza obiekt w skompresowanego JSON-a w
+          string, umożliwia pobranie obiektu do local storage
+        </p>
+        <p class="day__paragraph">
+          <strong>localStorage.getItem('nazwa')</strong> - pobiera element z local storage
+        </p>
+        <p class="day__paragraph">
+          <strong>const.newPerson = JSON.parse(nazwa)</strong> - przywraca normalny obiekt ze skompresowanego JSON-a
+          (odwrotne do JSON.stringify)
+        </p>
+        <p class="day__paragraph">
+          <strong>stringify i parse</strong> - operację przetwarzania obiektu na skompresowany JSON nazywa się
+          <strong>spłaszczaniem danych</strong> - spłaszczamy je po to, zeby można było je łatwo przechowywać
+        </p>
+        <p class="day__paragraph">
+          <strong>localStorage.removeItem('nazwa')</strong> - usuwa element z local storage
+        </p>
+        <p class="attention">
+          devtools -> Application<br>
+        </p>
+        <p class="list__title">
+          Input z zapisywaniem danych w local storage
+        </p>
+        <ol class="list__totality">
+          <li class="list__item">Pobranie inputu - document.querySelector</li>
+          <li class="list__item">Dodanie eventListnera keyup - powoduje działanie na podniesienie przycisku klawiatury.
+            Jeżeli przucosk zostanie podniesiony, to wykonaj funkcję (<strong>e.target.value</strong> - pokazuje
+            wprowadzoną wartość).<br>
+            Zapisanie w local.storage po wykonaniu akcji</li>
+          <li class="list__item">Pobranie danych z local storage i uzupełnienie inputu</li>
+        </ol>
+        <p class="day__paragraph day__paragraph--center">
+        Przykładowy input zapisujący dane: <input class="form__window form__window-js">
+        </p>
       </article>
     </section>
 
