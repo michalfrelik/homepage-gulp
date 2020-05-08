@@ -74,6 +74,7 @@ navigationSwitcher.addEventListener('click', (e) => {
 
 
 const inputTest = document.querySelector('.form__window-js');
+console.log(inputTest);
 
 inputTest.addEventListener('keyup', (e) => {
   localStorage.setItem('inputTest',e.target.value);
