@@ -351,28 +351,28 @@ html {
 .navigation {
   font-family: 'Lato', sans-serif;
   margin: 0; }
-  .navigation__item {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+  .navigation__link {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    margin: 5px auto;
-    background: black;
-    border: solid grey 1px;
+    background: #CED0CE;
+    border: solid black 1px;
     border-radius: 6px;
-    padding: 8px 10px;
-    min-width: 120px;
-    height: 20px; }
-  .navigation__link {
-    -webkit-box-shadow: 10px 10px 8px rgba(0, 0, 0, 0.7);
-            box-shadow: 10px 10px 8px rgba(0, 0, 0, 0.7);
-    color: whitesmoke;
+    -webkit-box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.7);
+            box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.7);
+    color: black;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     font-size: 14px;
+    height: 20px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: 5px auto;
+    max-width: 150px;
+    min-width: 120px;
+    padding: 8px 10px;
     text-decoration: none; }
     .navigation__link--footer {
       bottom: 10px;
@@ -383,9 +383,9 @@ html {
         .navigation__link--footer {
           display: none; } }
     .navigation__link:hover {
-      color: whitesmoke;
-      font-size: 16px;
-      font-weight: bold; }
+      -webkit-transform: scale(1.1);
+          -ms-transform: scale(1.1);
+              transform: scale(1.1); }
   .navigation__list {
     -webkit-box-align: center;
         -ms-flex-align: center;
@@ -481,7 +481,7 @@ html {
         -ms-grid-columns: 1fr 1fr 1fr;
         grid-template-columns: 1fr 1fr 1fr; } }
   .homepage__form {
-    border: 3px solid darkred;
+    border: 3px solid #2274A5;
     border-radius: 30px;
     -webkit-box-shadow: 10px 10px 8px rgba(0, 0, 0, 0.7);
             box-shadow: 10px 10px 8px rgba(0, 0, 0, 0.7);
@@ -513,9 +513,9 @@ html {
       .homepage__form--text:hover {
         font-size: 30px; }
     .homepage__form:hover {
-      background: grey; }
+      background: #CED0CE; }
   .homepage__week {
-    border: 3px solid darkred;
+    border: 3px solid #2274A5;
     height: 100px;
     margin: 0 auto;
     text-align: center;
@@ -525,7 +525,7 @@ html {
 
 .header {
   padding: 10px;
-  border: 3px solid darkred;
+  border: 3px solid #2274A5;
   border-radius: 30px;
   -webkit-box-shadow: 10px 10px 8px rgba(0, 0, 0, 0.7);
           box-shadow: 10px 10px 8px rgba(0, 0, 0, 0.7);
@@ -602,7 +602,7 @@ html {
     background: yellow;
     width: 24px;
     height: 24px;
-    border: solid 2px grey;
+    border: solid 2px #CED0CE;
     border-radius: 50%;
     margin-right: 5px; }
     @media (max-width: 768px) {
@@ -614,14 +614,14 @@ html {
     background: #91249b;
     width: 24px;
     height: 24px;
-    border: solid 2px grey;
+    border: solid 2px #CED0CE;
     border-radius: 50%;
     margin-left: 5px; }
     @media (max-width: 768px) {
       .day__subtitle::after {
         display: none; } }
   .day__title {
-    border: 3px solid darkred;
+    border: 3px solid #2274A5;
     color: black;
     font-size: 30px;
     font-family: 'Bangers', cursive;
@@ -656,7 +656,7 @@ html {
   background-image: url(../assets/img/225.png);
   background-position: center center;
   background-size: cover;
-  border: solid grey 3px;
+  border: solid #CED0CE 3px;
   border-radius: 30px;
   margin: 10px auto;
   max-width: 300px;
@@ -676,8 +676,11 @@ html {
       color: red; }
 
 .attention {
-  border: 3px grey solid;
-  color: red;
+  background: -webkit-gradient(linear, left top, right top, from(#2274A5), to(#223843));
+  background: -o-linear-gradient(left, #2274A5, #223843);
+  background: linear-gradient(90deg, #2274A5, #223843);
+  border: 3px #CED0CE solid;
+  color: #F18F01;
   font-size: 20px;
   font-weight: 800;
   margin: 20px auto;
@@ -720,7 +723,7 @@ html {
   overflow: hidden;
   width: 100%; }
   .img__korsan-lorem--signature {
-    color: grey;
+    color: #CED0CE;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -754,7 +757,7 @@ html {
           justify-content: center; }
 
 .table {
-  border: solid grey 3px;
+  border: solid #CED0CE 3px;
   border-collapse: collapse;
   margin: 10px auto;
   table-layout: auto;
