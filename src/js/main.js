@@ -3,11 +3,11 @@
 // service worker registration - remove if you're not going to use it
 
 if ('serviceWorker' in navigator) {
-  window.addEventListener('load', function() {
-    navigator.serviceWorker.register('serviceworker.js').then(function(registration) {
+  window.addEventListener('load', function () {
+    navigator.serviceWorker.register('serviceworker.js').then(function (registration) {
       // Registration was successful
       console.log('ServiceWorker registration successful with scope: ', registration.scope);
-    }, function(err) {
+    }, function (err) {
       // registration failed :(
       console.log('ServiceWorker registration failed: ', err);
     });
@@ -30,6 +30,24 @@ if ('serviceWorker' in navigator) {
 
 // welcome(name, age);
 // welcome('Michał Ferlik', 26);
+
+
+// const button = document.querySelector('.header__button--js');
+// console.log(button);
+
+// button.addEventListener('click', (e) => {
+//   const header = document.querySelector('.header__title--js')
+//   header.innerHTML = '!! Pierwszy button !!';
+//   button.addEventListener('click', (e) => {
+//     header.classList.add('header__title--red');
+//     button.addEventListener('click', (e) => {
+//       header.classList.remove('header__title--red');
+//       button.addEventListener('click', (e) => {
+//         header.innerHTML = 'Nauka frontendu !';
+//       });
+//     });
+//   });
+// });
 
 
 const navigationSwitcher = document.querySelector('.navigation__switcher--js');
@@ -82,7 +100,7 @@ const inputTest = document.querySelector('.form__window-js');
 console.log(inputTest);
 
 inputTest.addEventListener('keyup', (e) => {
-  localStorage.setItem('inputTest',e.target.value);
+  localStorage.setItem('inputTest', e.target.value);
 });
 
 if (localStorage.getItem('inputTest')) {
